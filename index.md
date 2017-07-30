@@ -1,5 +1,7 @@
 ## About Me
 
+<img src="http://assortedtrails.com/pics/brewery.jpg" alt="Profile Picture" width="300px"/>
+
 I am an applied scientist at Microsoft working on Spoken Language Understanding. I got my PhD from University of Michigan in 2015 working under Prof. Dragomir Radev ([now at Yale](https://yale-lily.github.io/)). My thesis work focussed on automatic survey generation of scientific topics.
 
 ### PhD Thesis
