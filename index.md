@@ -1,8 +1,7 @@
-## Welcome to GitHub Pages
+## About Me
 
-You can use the [editor on GitHub](https://github.com/rahuljha/rahuljha.github.io/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
+I am an applied scientist at Microsoft working on Spoken Language Understanding. I got my PhD from University of Michigan in 2015 working under Prof. Dragomir Radev (now at [Yale] (https://yale-lily.github.io/)). My thesis work focussed on automatic survey generation of scientific topics.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
 ### Markdown
 
