@@ -1,9 +1,13 @@
 ## About Me
 
-I am an applied scientist at Microsoft working on Spoken Language Understanding. I got my PhD from University of Michigan in 2015 working under Prof. Dragomir Radev (now at [Yale] (https://yale-lily.github.io/)). My thesis work focussed on automatic survey generation of scientific topics.
+I am an applied scientist at Microsoft working on Spoken Language Understanding. I got my PhD from University of Michigan in 2015 working under Prof. Dragomir Radev (now at [Yale](https://yale-lily.github.io/)). My thesis work focussed on automatic survey generation of scientific topics.
 
+### PhD Thesis
+**NLP Driven Models for Automatically Generating Survey Articles for Scientific Topics.**
+This thesis presents new methods that use natural language processing (NLP) driven models for summarizing research in scientific fields. Given a topic query in the form of a text string, we present methods for finding research articles relevant to the topic as well as summarization algorithms that use lexical and discourse information present in the text of these articles to generate coherent and readable extractive summaries of past research on the topic. In addition to summarizing prior research, good survey articles should also forecast future trends. With this motivation, we present work on forecasting future impact of scientific publications using NLP driven features.
+[Official version](http://assortedtrails.com/pubs/Thesis_RahulJha.doublespaced.pdf), [Singled Spaced version](http://assortedtrails.com/pubs/Thesis_RahulJha.singlespaced.pdf)
 
-### Markdown
+### Publications 
 
 Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 
