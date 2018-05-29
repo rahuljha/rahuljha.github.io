@@ -13,7 +13,7 @@ This thesis presents new methods that use natural language processing (NLP) driv
 
 ### Publications 
 
-* Rahul Jha, Alex Marin, Suvamsh Shivaprasad and Imed Zitouni. **Bag of Experts Architectures for Model Reuse in Conversational Language Understanding.** NAACL, 2018. ([PDF](reuse_naacl2018.pdf))
+* Rahul Jha, Alex Marin, Suvamsh Shivaprasad and Imed Zitouni. **Bag of Experts Architectures for Model Reuse in Conversational Language Understanding.** NAACL, 2018. ([PDF](http://aclweb.org/anthology/N18-3019))
 * Rahul Jha, Amjad Abu-Jbara, Vahed Qazvinian and Dragomir Radev. **NLP Driven Citation Analysis for Scientometrics.** Journal of Natural Language Engineering, 2016. ([PDF](http://assortedtrails.com/pubs/aan_jnle_CR.pdf))
 * Rahul Jha, Catherine Finegan-Dollak, Ben King, Reed Coke and Dragomir Radev. **Content Models for Survey Generation: A Factoid-Based Evaluation.** Proceedings of the Annual Meeting of the Association for Computational Linguistics, 2015. ([PDF](http://assortedtrails.com/pubs/content_models_acl15.pdf))
 * Rahul Jha, Reed Coke and Dragomir Radev. **Surveyor: A system for generating coherent survey articles for scientific topics.** In Proceedings of Twenty-Ninth AAAI Conference on Artificial Intelligence, 2015. ([PDF](http://assortedtrails.com/pubs/surveyor_aaai_15.pdf))
