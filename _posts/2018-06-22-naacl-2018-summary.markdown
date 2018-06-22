@@ -1,0 +1,7 @@
+---
+layout: post
+title:  "NAACL 2018 Summary"
+date:   2018-06-22 14:20:05 -0700
+categories: jekyll update
+---
+Work in progress
