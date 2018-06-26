@@ -13,7 +13,7 @@ Deep learning continued to dominate machine learning techniques for NLP at NAACL
 [Wang et al.](http://aclweb.org/anthology/N18-1001) presented a transfer learning technique for NER on medical records. The main idea behind their architecture is to share parameters in the initial embedding and LSTM layers, and reduce the feature representation discrepancy in the higher layers by using maximum mean discrepancy (MMD).
 
 [Goyal et al.](http://aclweb.org/anthology/N18-3018) presented an architecture for joint training of intents and slot tagging for conversational understanding applications. Their transfer learning approach is based on pre-training the network using source domain, and then fine-tuning the top-most affine transform and softmax layers using target domain. They showed good improvements over 200 domains using their transfer learning approach. An interesting, though not surprising, result was that the largest gains from transfer learning were seen for the most low resource data settings. We saw similar results in our experiments with Bag of Experts transfer learning paper for NAACL 2018 ([Jha et al.](http://aclweb.org/anthology/N18-3019))
-![AlexaTL](/assets/naacl2018sum/goyal.PNG){:width="300px" align="right"}
+![AlexaTL](/assets/naacl2018sum/Goyal.PNG){:width="300px" align="right"}
 
 [Shah et al.](http://aclweb.org/anthology/N18-3006) presented an approach for training end-to-end neural models for conversational agents by using dialogue self-play between a simulated user and a task-independent programmed system agent to generate initial template utterances, which are then paraphrased further through crowdsourcing.
 
