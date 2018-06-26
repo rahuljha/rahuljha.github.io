@@ -5,6 +5,8 @@ date:   2018-06-22 14:20:05 -0700
 categories: jekyll update
 ---
 
+NAACL is one of the top conferences in the area of Natural Language Processing (NLP). This year, NAACL was held in New Orleans, Louisiana. I attended the main conference this year and it was a pretty well-run event! I learnt a lot, here are some of my notes.
+
 # Transfer Learning
 
 Deep learning continued to dominate machine learning techniques for NLP at NAACL 2018. Transfer learning and mutli-task learning methods got a lot attention both in research and industry track. 
