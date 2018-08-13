@@ -1,0 +1,283 @@
+
+
+(set-face-attribute 'default nil
+                    :family "Consolas" :height 115)
+
+(add-to-list 'load-path (expand-file-name "~/.elisp/"))
+(add-to-list 'load-path "~/.elisp/remember")
+
+;; calendar
+(global-set-key "\C-c\C-c" 'calendar)
+
+;;octave directives
+
+(autoload 'octave-mode "octave-mod" nil t)
+(setq auto-mode-alist
+      (cons '("\\.m$" . octave-mode) auto-mode-alist))
+(autoload 'run-octave "octave-inf" nil t)
+
+(auto-revert-mode t)
+
+;; Put autosave files (ie #foo#) and backup files (ie foo~) in ~/.emacs.d/.
+(custom-set-variables
+  ;; custom-set-variables was added by Custom.
+  ;; If you edit it by hand, you could mess it up, so be careful.
+  ;; Your init file should contain only one such instance.
+  ;; If there is more than one, they won't work right.
+ '(auto-save-file-name-transforms (quote ((".*" "~/.emacs.d/autosaves/\\1" t))))
+ '(backup-directory-alist (quote ((".*" . "~/.emacs.d/backups/"))))
+ '(fill-column 125)
+ '(org-agenda-files (quote ("e:/TaskLists/runningTaskList.org")))
+ '(show-paren-style (quote mixed)))
+
+(setq org-mobile-directory "~/Dropbox/MobileOrg")
+
+;; create the autosave dir if necessary, since emacs won't.
+(make-directory "~/.emacs.d/autosaves/" t)
+
+;;swi-prolog
+(setq auto-mode-alist
+      (append
+       '(("\\.pl" . prolog-mode))
+       auto-mode-alist))
+(setq prolog-program-name "swipl")
+(setq prolog-consult-string "[user].\n")
+;If you want this.  Indentation is either poor or I don't use
+;it as intended.
+;(setq prolog-indent-width 8)
+
+;;par-edit mode
+(autoload 'enable-paredit-mode "paredit"
+  "Turn on pseudo-structural editing of Lisp code."
+  t)
+;;start the server so that external functions can use it
+(server-start)
+;;set display size and position
+(setq initial-frame-alist '((top . 1) (left . 1) (width . 150) (height . 40)))
+(show-paren-mode)
+(flyspell-mode)
+;(load "~/.elisp/nxhtml/autostart.el")
+;;smalltalk
+(setq auto-mode-alist
+      (append  '(("\\.st\\'" . smalltalk-mode))
+               auto-mode-alist))
+
+;;To get bitstream vera-sans as the default font
+;;personal niceties
+(setq tramp-default-method "ssh")
+(winner-mode t)
+(global-font-lock-mode t)
+(ediff-toggle-multiframe)
+(menu-bar-enable-clipboard)
+(require 'ido)
+(ido-mode t)
+;;autocomplete
+
+;;Soar-mode
+(autoload 'run-soar "soar"
+          "Run an inferior Soar process."
+          t)
+
+(autoload 'soar-mode "soar"
+          "Mode for editing Soar code."
+          t)
+; Files ending in ".soar" are Soar source,
+; so put their buffers in soar-mode.
+(setq auto-mode-alist 
+      (cons '("\\.soar$" . soar-mode)
+            auto-mode-alist))
+
+;;org-mode
+(add-to-list 'auto-mode-alist '("\\.org\\'" . org-mode))
+(global-set-key "\C-cl" 'org-store-link)
+(global-set-key "\C-ca" 'org-agenda)
+;;custom TODO keywords
+(setq org-todo-keywords '((type "SOMEDAY" "TODO" "NEXT ACTION" "WAITING" "|" "DONE")))
+
+;;custom agenda commands
+;; (setq org-agenda-custom-commands
+;;       '(("pn" tags "personal+TODO=\"NEXT ACTION\"")
+;;         ("rn" tags "research+TODO=\"NEXT ACTION\"")
+;;         ("fs" tags "fuse+TODO=\"NEXT ACTION\"")
+;;         ("w" tags "TODO=\"WAITING FOR\"")
+;;         ("n" "Next Actions"
+;;          ;;             ((tags "computer+TODO=\"NEXT ACTION\"")
+;;          ;;              (tags "phone+TODO=\"NEXT ACTION\"")
+;;          ;;              (tags "out+TODO=\"NEXT ACTION\"")
+;;          ((tags "TODO=\"NEXT ACTION\""))
+;;          nil
+;;          ("~/Desktop/next_actions.pdf"))
+;;         ("s" "Someday Stuff"
+;;          ((tags "TODO=\"SOMEDAY\"")
+;;           ))
+;;         ("r" "General Report"
+;; 	((agenda "" ((org-agenda-ndays 7))) 
+;;          ((tags "TODO=\"NEXT ACTION\"")
+;;           (tags "TODO=\"WAITING FOR\"")
+;;            ))             
+;;          )))
+;;custom agenda commands
+(setq org-agenda-custom-commands
+      '(("r" "Weekly Review"
+         ((agenda "" ((org-agenda-ndays 14))) ;; review upcoming deadlines and appointments
+                                           ;; type "l" in the agenda to review logged items
+          (todo "WAITING") ;; review waiting items					   
+          (todo "NEXT ACTION") ;; review all projects (assuming you use todo keywords to designate projects)
+          (todo "SOMEDAY"))) ;; 
+         ;; ...other commands here
+        ))
+
+(setq org-agenda-exporter-settings
+                '((ps-number-of-columns 2)
+                  (ps-font-size 14)
+                  (ps-landscape-mode t)
+                  (htmlize-output-type 'css)
+                  (ps-left-margin nil)
+                  (ps-right-margin nil)))
+
+(add-to-list 'load-path "~/.elisp/EXPERIMENTAL/")
+;remember mode
+(setq org-directory "~/")
+(setq org-default-notes-file (concat org-directory "/org_files/notes.org"))
+(define-key global-map "\C-cr" 'org-remember)
+;;for mac, to get the usual behavior for M-w which doesn't show on mac
+(global-set-key "\M-w" 'copy-region-as-kill)
+;;full screen
+(defun toggle-fullscreen ()
+  (interactive)
+  (set-frame-parameter 
+   nil 
+   'fullscreen 
+   (if (frame-parameter nil 'fullscreen)
+       nil
+     'fullboth)))
+
+(global-set-key [(meta return)] 'toggle-fullscreen)
+
+;; Use cperl-mode instead of the default perl-mode
+(add-to-list 'auto-mode-alist '("\\.\\([pP][Llm]\\|al\\)\\'" . cperl-mode))
+(add-to-list 'interpreter-mode-alist '("perl" . cperl-mode))
+(add-to-list 'interpreter-mode-alist '("perl5" . cperl-mode))
+(add-to-list 'interpreter-mode-alist '("miniperl" . cperl-mode))
+
+(autoload 'javascript-mode' "javascript" nil t)
+(autoload 'php-mode' "php-mode" nil t)
+(autoload 'css-mode' "css-mode" nil t)
+;(add-to-list 'auto-mode-alist '("\\.js\\'" . javascript-mode))
+(add-to-list 'auto-mode-alist '("\\.php\\'" . php-mode))
+(add-to-list 'auto-mode-alist '("\\.css\\'" . css-mode))
+
+(autoload 'js2-mode "js2" nil t)
+(add-to-list 'auto-mode-alist '("\\.js$" . js2-mode))
+
+
+;;Steve Yegge's suggestions
+
+(global-set-key "\C-w" 'delete-backward-char)
+(global-set-key "\C-x\C-k" 'kill-region)
+(global-set-key "\C-c\C-k" 'kill-region)
+;lose the UI
+(if (fboundp 'scroll-bar-mode) (scroll-bar-mode -1))
+(if (fboundp 'tool-bar-mode) (tool-bar-mode -1))
+(if (fboundp 'menu-bar-mode) (menu-bar-mode -1))
+
+(global-set-key "\C-x\C-m" 'execute-extended-command)
+(global-set-key "\C-c\C-m" 'execute-extended-command)
+
+;;RDman's scroll other window
+;;procedures for scrolling 1 line at a time for the other window
+(defun scroll-other-window-n-lines-ahead (&optional n)
+  "Scroll ahead N lines (1 by default) in the other window"
+  (interactive "P")
+  (scroll-other-window (prefix-numeric-value n)))
+
+(defun scroll-other-window-n-lines-behind (&optional n)
+  "Scroll behind N lines (1 by default) in the other window"
+  (interactive "P")
+  (scroll-other-window (- (prefix-numeric-value n))))
+
+(global-set-key "\C-\M-a" 'scroll-other-window-n-lines-behind)
+(global-set-key "\C-\M-q" 'scroll-other-window-n-lines-ahead)
+
+;scrolling functions for scrolling one line at a time (WGE Chapter 2)
+(defalias 'scroll-ahead 'scroll-up)
+(defalias 'scroll-behind 'scroll-down)
+
+(defun scroll-n-lines-ahead (&optional n)
+  "scroll ahead n lines"
+(interactive "P")
+(scroll-ahead (prefix-numeric-value n)))
+
+(defun scroll-n-lines-behind (&optional n)
+  "scroll ahead n lines"
+(interactive "P")
+(scroll-behind (prefix-numeric-value n)))
+
+(defun scroll-n-lines-left (&optional n)
+  "scroll left n lines"
+(interactive "P")
+(scroll-left (prefix-numeric-value n)))
+
+(defun scroll-n-lines-right (&optional n)
+  "scroll left n lines"
+(interactive "P")
+(scroll-right (prefix-numeric-value n)))
+
+(global-set-key "\C-z" 'scroll-n-lines-behind)
+(global-set-key "\C-q" 'scroll-n-lines-ahead)
+(global-set-key "\C-\M-a" 'scroll-n-lines-left)
+(global-set-key "\C-\M-s" 'scroll-n-lines-right)
+(global-set-key "\C-c\C-q" 'quoted-insert)
+
+;defining desired behaviour when opening a symlink file(WGE Chapter 2)
+(add-hook 'find-file-hooks 
+	    (lambda ()
+	          (if (file-symlink-p buffer-file-name)
+		      (progn 
+			  (setq buffer-read-only t)
+			    (message "File is a symlink")))))
+
+(defun visit-target-instead ()
+  "Replace this buffer with a buffer visiting the link target"
+  (interactive)
+  (if buffer-file-name
+      (let ((target (file-symlink-p buffer-file-name)))
+	(if target
+	        (find-alternate-file target)
+	    (error "Not visiting a symlink")))
+    (error "Not visiting a file")))
+
+(defun clobber-symlink ()
+  "Replace symlink with a copy of the file"
+  (interactive)
+  (if buffer-file-name
+      (let ((target (file-symlink-p buffer-file-name)))
+	(if target 
+	        (if (yes-or-no-p (format "Replace %s with %s?" buffer-file-name target))
+		    (progn
+		        (delete-file buffer-file-name)
+			  (write-file buffer-file-name)))
+	    (error "Not visiting a symlink")))
+    (error "Not visiting a file")))
+
+;undoing scrolling (WGE Chapter 3)
+(defvar unscroll-point nil
+  "Cursor position for next call to 'unscroll'.")
+(defvar unscroll-window-start nil
+  "Window start for next call to 'unscroll'.")
+
+(defadvice scroll-up (before remember-for-unscroll
+			          activate compile)
+  "Remember where we started from, for 'unscroll'."
+(if (not (eq last-command 'scroll-up))
+    (progn 
+      (setq unscroll-point (point))
+      (setq unscroll-window-start (window-start)))))
+(defun unscroll ()
+  "Jump to the position specified by 'unscroll-to'."
+  (interactive)
+  (if (and (not unscroll-point) (not unscroll-window-start))
+      (error "cannot unscroll yet"))
+  (progn
+    (goto-char unscroll-point)
+    (set-window-start nil unscroll-window-start)))
