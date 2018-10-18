@@ -4,23 +4,24 @@ This is a living document where I am trying to organize my notes about the Trans
 
 ## Research Articles
 
-Here's the original paper: https://arxiv.org/pdf/1706.03762.pdf
+[Original paper](https://arxiv.org/pdf/1706.03762.pdf)
 
-It's been used in BERT representations (https://arxiv.org/abs/1810.04805). There's probably other uses I have to find.
+It's been used in [BERT representations](https://arxiv.org/abs/1810.04805). There's probably other uses I have to find.
 
 ## Blog posts
 
-Google's own blog: https://ai.googleblog.com/2017/08/transformer-novel-neural-network.html
+[Google's own blog article describing the architecture](https://ai.googleblog.com/2017/08/transformer-novel-neural-network.html)
 
-https://mchromiak.github.io/articles/2017/Sep/12/Transformer-Attention-is-all-you-need/#.W8jJjmhKhaQ
+[Blog](https://mchromiak.github.io/articles/2017/Sep/12/Transformer-Attention-is-all-you-need/#.W8jJjmhKhaQ) (To Read)
 
-http://jalammar.github.io/illustrated-transformer/
+[Blog](http://jalammar.github.io/illustrated-transformer/) (To Read)
 
-http://mlexplained.com/2017/12/29/attention-is-all-you-need-explained/
+[Blog](http://mlexplained.com/2017/12/29/attention-is-all-you-need-explained/) (To Read)
 
 # Implementations 
 
-http://nlp.seas.harvard.edu/2018/04/03/attention.html
+[Nice code annotation for the paper](http://nlp.seas.harvard.edu/2018/04/03/attention.html)
 
 # Industry Usage
+
 
