@@ -6,7 +6,7 @@ This is a living document where I am trying to organize my notes about the Trans
 
 [Original paper](https://arxiv.org/pdf/1706.03762.pdf)
 
-It's been used in [BERT representations](https://arxiv.org/abs/1810.04805). There's probably other uses I have to find.
+Used in [BERT representations](https://arxiv.org/abs/1810.04805). 
 
 ## Blog posts
 
