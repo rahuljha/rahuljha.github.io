@@ -12,14 +12,15 @@ It's been used in [BERT representations](https://arxiv.org/abs/1810.04805). Ther
 
 [Google's own blog article describing the architecture](https://ai.googleblog.com/2017/08/transformer-novel-neural-network.html)
 
-[Blog](https://mchromiak.github.io/articles/2017/Sep/12/Transformer-Attention-is-all-you-need/#.W8jJjmhKhaQ) (To Read)
+[Very detailed article with lots of references for further reading](https://mchromiak.github.io/articles/2017/Sep/12/Transformer-Attention-is-all-you-need/#.W8jJjmhKhaQ)
 
-[Blog](http://jalammar.github.io/illustrated-transformer/) (To Read)
+[To Read](http://jalammar.github.io/illustrated-transformer/)
 
-[Blog](http://mlexplained.com/2017/12/29/attention-is-all-you-need-explained/) (To Read)
+[To Read](http://mlexplained.com/2017/12/29/attention-is-all-you-need-explained/) 
 
 # Implementations 
 
+[Reference implementation from authors](https://github.com/tensorflow/tensor2tensor/blob/master/tensor2tensor/models/transformer.py)
 [Nice code annotation for the paper](http://nlp.seas.harvard.edu/2018/04/03/attention.html)
 
 # Industry Usage
