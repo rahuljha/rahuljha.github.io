@@ -21,6 +21,7 @@ Used in [BERT representations](https://arxiv.org/abs/1810.04805).
 # Implementations 
 
 [Reference implementation from authors](https://github.com/tensorflow/tensor2tensor/blob/master/tensor2tensor/models/transformer.py)
+
 [Nice code annotation for the paper](http://nlp.seas.harvard.edu/2018/04/03/attention.html)
 
 # Industry Usage
