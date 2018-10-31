@@ -11,7 +11,7 @@ This thesis presents new methods that use natural language processing (NLP) driv
 [Official version](/assets/Thesis_RahulJha.doublespaced.pdf), [Singled Spaced version](/assets/Thesis_RahulJha.singlespace.pdf)
 
 # Conference/Journal Publications
-* Sungjin Lee and Rahul Jha. **Zero-Shot Adaptive Transfer for Conversational Language Understanding**, Arxiv Preprint, 2018 ([PDF](https://arxiv.org/pdf/1808.10059.pdf))
+* Sungjin Lee and Rahul Jha. **Zero-Shot Adaptive Transfer for Conversational Language Understanding**, AAAI, 2019 ([PDF](https://arxiv.org/pdf/1808.10059.pdf))
 * Rahul Jha, Alex Marin, Suvamsh Shivaprasad and Imed Zitouni. **Bag of Experts Architectures for Model Reuse in Conversational Language Understanding.** NAACL, 2018. ([PDF](http://aclweb.org/anthology/N18-3019))
 * Rahul Jha, Amjad Abu-Jbara, Vahed Qazvinian and Dragomir Radev. **NLP Driven Citation Analysis for Scientometrics.** Journal of Natural Language Engineering, 2016. ([PDF](/assets/aan_jnle_CR.pdf))
 * Rahul Jha, Catherine Finegan-Dollak, Ben King, Reed Coke and Dragomir Radev. **Content Models for Survey Generation: A Factoid-Based Evaluation.** Proceedings of the Annual Meeting of the Association for Computational Linguistics, 2015. ([PDF](http://www.aclweb.org/anthology/P15-1043))
