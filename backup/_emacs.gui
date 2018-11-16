@@ -2,6 +2,8 @@
 
 (set-face-attribute 'default nil
                     :family "Consolas" :height 115)
+		  
+(load-theme 'afternoon)
 
 (add-to-list 'load-path (expand-file-name "~/.elisp/"))
 (add-to-list 'load-path "~/.elisp/remember")
