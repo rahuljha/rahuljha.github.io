@@ -3,12 +3,6 @@ layout: page
 title: Publications
 permalink: /publications/
 ---
-# PHD Thesis
-**NLP Driven Models for Automatically Generating Survey Articles for Scientific Topics**
-
-This thesis presents new methods that use natural language processing (NLP) driven models for summarizing research in scientific fields. Given a topic query in the form of a text string, we present methods for finding research articles relevant to the topic as well as summarization algorithms that use lexical and discourse information present in the text of these articles to generate coherent and readable extractive summaries of past research on the topic. In addition to summarizing prior research, good survey articles should also forecast future trends. With this motivation, we present work on forecasting future impact of scientific publications using NLP driven features.
-
-[Official version](/assets/Thesis_RahulJha.doublespaced.pdf), [Singled Spaced version](/assets/Thesis_RahulJha.singlespace.pdf)
 
 # Conference/Journal Publications
 * Sungjin Lee and Rahul Jha. **Zero-Shot Adaptive Transfer for Conversational Language Understanding**, AAAI, 2019 ([PDF](https://arxiv.org/pdf/1808.10059.pdf))
@@ -24,3 +18,10 @@ This thesis presents new methods that use natural language processing (NLP) driv
 * Amjad Abu-Jbara, Rahul Jha, Eric Morley, and Dragomir Radev. **Experimental results on the native language identification shared task.** In Proceedings of The NAACL 2013 Workshop on Native Language Identification, 2013. ([PDF](http://www.aclweb.org/anthology/W13-1710))
 * Rahul Jha and Dragomir Radev. **An unsupervised method for learning probabilistic first order logic models from unstructured clinical text.** In ICML Workshop on Learning from Unstructured Clinical Text,  Bellevue, Washington, USA, July 2nd, 2011. ([PDF](https://sites.google.com/site/learnclinicalfreetext/entries/ICMLWS4.pdf?attredirects=0&d=1))
 * Ahmed Hassan, Amjad Abu-Jbara, Rahul Jha and Dragomir Radev. **Identifying the semantic orientation of foreign words.** in  49th Annual Meeting of the Association for Computational Linguistics: Human Language Technologies, Portland, Oregon, USA, June 19-24, 2011. ([PDF](http://www.aclweb.org/anthology/P11-2104))
+
+# PHD Thesis
+**NLP Driven Models for Automatically Generating Survey Articles for Scientific Topics**
+
+This thesis presents new methods that use natural language processing (NLP) driven models for summarizing research in scientific fields. Given a topic query in the form of a text string, we present methods for finding research articles relevant to the topic as well as summarization algorithms that use lexical and discourse information present in the text of these articles to generate coherent and readable extractive summaries of past research on the topic. In addition to summarizing prior research, good survey articles should also forecast future trends. With this motivation, we present work on forecasting future impact of scientific publications using NLP driven features.
+
+[Official version](/assets/Thesis_RahulJha.doublespaced.pdf), [Singled Spaced version](/assets/Thesis_RahulJha.singlespace.pdf)
