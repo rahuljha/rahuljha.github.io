@@ -5,6 +5,7 @@ permalink: /publications/
 ---
 
 # Conference/Journal Publications
+* Kunho Kim, Rahul Jha, Kyle Williams, Alex Marin and Imed Zitouni, **Slot Tagging for Task Oriented Spoken Language Understanding in Human-to-human Conversation Scenarios**, CoNLL, 2019 (To appear)
 * Sungjin Lee and Rahul Jha. **Zero-Shot Adaptive Transfer for Conversational Language Understanding**, AAAI, 2019 ([PDF](https://arxiv.org/pdf/1808.10059.pdf))
 * Rahul Jha, Alex Marin, Suvamsh Shivaprasad and Imed Zitouni. **Bag of Experts Architectures for Model Reuse in Conversational Language Understanding.** NAACL, 2018. ([PDF](http://aclweb.org/anthology/N18-3019))
 * Rahul Jha, Amjad Abu-Jbara, Vahed Qazvinian and Dragomir Radev. **NLP Driven Citation Analysis for Scientometrics.** Journal of Natural Language Engineering, 2016. ([PDF](/assets/aan_jnle_CR.pdf))
