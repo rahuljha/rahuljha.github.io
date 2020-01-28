@@ -60,8 +60,6 @@
 *** Multi-modal
     1. https://www.aclweb.org/anthology/P19-1659.pdf	Multimodal Abstractive Summarization for How2 Videos
     2. https://www.aclweb.org/anthology/P19-1210.pdf	Keep Meeting Summaries on Topic: Abstractive Multi-Modal Meeting Summarization
-*** Use additional constraints
-
 *** Uncategorized
     1. https://www.aclweb.org/anthology/D19-1298.pdf	Extractive Summarization of Long Documents by Combining Global and Local Context
     2. https://www.aclweb.org/anthology/D19-1300.pdf	Reading Like {HER}: Human Reading Inspired Extractive Summarization
