@@ -74,4 +74,3 @@ Finally, [Deutsch & Roth](https://www.aclweb.org/anthology/D19-1386.pdf) introdu
 
 Clearly, the summarization community is active as ever! I hope you found this review useful. If you’re interested in exploring this more, I’ve uploaded the raw text file with all the papers organized into my topic hierarchy [here](https://rahuljha.github.io/assets/2019_summarization_themes.txt).
 
-</div>
