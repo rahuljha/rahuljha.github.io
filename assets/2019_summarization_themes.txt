@@ -1,0 +1,74 @@
+* Themes
+** New Dataset / Task
+   1. https://www.aclweb.org/anthology/P19-1212.pdf	{BIGPATENT}: A Large-Scale Dataset for Abstractive and Coherent Summarization
+   2. https://www.aclweb.org/anthology/P19-1204.pdf	{T}alk{S}umm: A Dataset and Scalable Annotation Method for Scientific Paper Summarization Based on Conference Talks
+   3. https://www.aclweb.org/anthology/P19-1102.pdf	Multi-News: A Large-Scale Multi-Document Summarization Dataset and Abstractive Hierarchical Model
+   4. https://www.aclweb.org/anthology/D19-1386.pdf	Summary Cloze: A New Task for Content Selection in Topic-Focused Summarization
+   5. https://www.aclweb.org/anthology/N19-1260.pdf	Abstractive Summarization of {R}eddit Posts with Multi-level Memory Networks
+   6. https://www.aclweb.org/anthology/N19-1070.pdf	Keyphrase Generation: A Text Summarization Struggle
+   7. https://www.aclweb.org/anthology/P19-1215.pdf	On the Summarization of Consumer Health Questions
+   8. https://www.aclweb.org/anthology/P19-1225.pdf	Answering while Summarizing: Multi-task Learning for Multi-hop {QA} with Evidence Extraction
+** Analysis
+   1. https://www.aclweb.org/anthology/D19-1051.pdf	Neural Text Summarization: A Critical Evaluation
+   2. https://www.aclweb.org/anthology/D19-1327.pdf	Earlier Isn{'}t Always Better: Sub-aspect Analysis on Corpus and System Biases in Summarization
+   3. https://www.aclweb.org/anthology/P19-1100.pdf	Searching for Effective Neural Extractive Summarization: What Works and What{'}s Next
+   4. https://www.aclweb.org/anthology/P19-1502.pdf	Studying Summarization Evaluation Metrics in the Appropriate Scoring Range
+   5. https://www.aclweb.org/anthology/P19-1213.pdf	Ranking Generated Summaries by Correctness: An Interesting but Challenging Application for Natural Language Inference
+   6. https://www.aclweb.org/anthology/N19-1394.pdf	Recommendations for Datasets for Source Code Summarization
+** Evaluation
+   1. https://www.aclweb.org/anthology/D19-1116.pdf	The Feasibility of Embedding Based Automatic Evaluation for Single Document Summarization
+   2. https://www.aclweb.org/anthology/N19-1395.pdf	Question Answering as an Automatic Evaluation Metric for News Article Summarization
+   3. https://www.aclweb.org/anthology/P19-1330.pdf	{H}igh{RES}: Highlight-based Reference-less Evaluation of Summarization
+** Theory
+   1. https://www.aclweb.org/anthology/P19-1101.pdf	A Simple Theoretical Model of Importance for Summarization
+** Technique
+*** Improve RL 
+    1. https://www.aclweb.org/anthology/D19-1307.pdf	Better Rewards Yield Better Summaries: Learning to Summarise Without References
+    2. https://www.aclweb.org/anthology/D19-1320.pdf	Answers Unite! Unsupervised Metrics for Reinforced Summarization Models
+    3. https://www.aclweb.org/anthology/D19-1623.pdf	Deep Reinforcement Learning with Distributional Semantic Rewards for Abstractive Summarization
+    4. https://www.aclweb.org/anthology/N19-1264.pdf	Guiding Extractive Summarization with Question-Answering Rewards
+*** Transformer based methods
+    1. https://www.aclweb.org/anthology/P19-1499.pdf	{HIBERT}: Document Level Pre-training of Hierarchical Bidirectional Transformers for Document Summarization
+    2. https://www.aclweb.org/anthology/D19-1387.pdf	Text Summarization with Pretrained Encoders
+    3. https://www.aclweb.org/anthology/P19-1500.pdf	Hierarchical Transformers for Multi-Document Summarization
+*** Constrained summarization
+    1. https://www.aclweb.org/anthology/D19-1388.pdf	How to Write Summaries with Patterns? Learning towards Abstractive Summarization through Prototype Editing
+    2. https://www.aclweb.org/anthology/P19-1207.pdf	{B}i{SET}: Bi-directional Selective Encoding with Template for Abstractive Summarization
+    3. https://www.aclweb.org/anthology/D19-1311.pdf	Subtopic-driven Multi-Document Summarization
+    4. https://www.aclweb.org/anthology/P19-1504.pdf	Generating Summaries with Topic Templates and Structured Convolutional Decoders
+    5. https://www.aclweb.org/anthology/D19-1323.pdf	An Entity-Driven Framework for Abstractive Summarization
+    6. https://www.aclweb.org/anthology/N19-1173.pdf	Single Document Summarization as Tree Induction
+*** unsupervised methods
+    2. https://www.aclweb.org/anthology/P19-1628.pdf	Sentence Centrality Revisited for Unsupervised Summarization
+    3. https://www.aclweb.org/anthology/D19-1389.pdf	{B}ottle{S}um: Unsupervised and Self-supervised Sentence Summarization using the Information Bottleneck Principle
+    4. https://www.aclweb.org/anthology/P19-1503.pdf	Simple Unsupervised Summarization by Contextual Matching
+    5. https://www.aclweb.org/anthology/P19-1206.pdf	Unsupervised Neural Single-Document Summarization of Reviews via Learning Latent Discourse Structure and its Ranking
+*** Improve encoder-decoder and attention
+    1. https://www.aclweb.org/anthology/D19-1117.pdf	Attention Optimization for Abstractive Document Summarization
+    2. https://www.aclweb.org/anthology/D19-1301.pdf	Contrastive Attention Mechanism for Abstractive Sentence Summarization
+    3. https://www.aclweb.org/anthology/P19-1205.pdf	Improving Abstractive Document Summarization with Salient Information Modeling
+    4. https://www.aclweb.org/anthology/P19-1501.pdf	Abstractive Text Summarization Based on Deep Learning and Semantic Content Generalization
+*** Improve PGN
+    1. https://www.aclweb.org/anthology/D19-1390.pdf	Improving Latent Alignment in Text Summarization by Generalizing the Pointer Generator
+    2. https://www.aclweb.org/anthology/D19-1304.pdf	Concept Pointer Network for Abstractive Summarization
+*** cross/multi-lingual
+    1. https://www.aclweb.org/anthology/D19-1302.pdf	{NCLS}: Neural Cross-Lingual Summarization
+    2. https://www.aclweb.org/anthology/N19-1204.pdf	A Robust Abstractive System for Cross-Lingual Summarization
+    3. https://www.aclweb.org/anthology/D19-1616.pdf	Abstract Text Summarization: A Low Resource Challenge
+    4. https://www.aclweb.org/anthology/P19-1305.pdf	Zero-Shot Cross-Lingual Abstractive Sentence Summarization through Teaching Generation and Attention
+*** Multi-modal
+    1. https://www.aclweb.org/anthology/P19-1659.pdf	Multimodal Abstractive Summarization for How2 Videos
+    2. https://www.aclweb.org/anthology/P19-1210.pdf	Keep Meeting Summaries on Topic: Abstractive Multi-Modal Meeting Summarization
+*** Use additional constraints
+    1. https://www.aclweb.org/anthology/D19-1297.pdf	Attribute-aware Sequence Network for Review Summarization
+*** Uncategorized
+    1. https://www.aclweb.org/anthology/D19-1298.pdf	Extractive Summarization of Long Documents by Combining Global and Local Context
+    2. https://www.aclweb.org/anthology/D19-1300.pdf	Reading Like {HER}: Human Reading Inspired Extractive Summarization
+    3. https://www.aclweb.org/anthology/D19-1620.pdf	Countering the Effects of Lead Bias in News Summarization via Multi-Stage Training and Auxiliary Losses
+    4. https://www.aclweb.org/anthology/P19-1098.pdf	Improving the Similarity Measure of Determinantal Point Processes for Extractive Multi-Document Summarization
+    5. https://www.aclweb.org/anthology/P19-1099.pdf	Global Optimization under Length Constraint for Neural Text Summarization
+    6. https://www.aclweb.org/anthology/P19-1209.pdf	Scoring Sentence Singletons and Pairs for Abstractive Summarization
+    7. https://www.aclweb.org/anthology/P19-1214.pdf	Self-Supervised Learning for Contextualized Extractive Summarization
+    8. https://www.aclweb.org/anthology/P19-1630.pdf	Inducing Document Structure for Aspect-based Summarization
+
+    
