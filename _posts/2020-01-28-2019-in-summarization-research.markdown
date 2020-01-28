@@ -18,7 +18,7 @@ How big is the summarization community compared to the rest of NLP? The table be
 
 The figure below shows the distribution of summarization papers across some high-level themes. 40 papers, 69% of the total, were focused on introducing new techniques for summarization. The next biggest focus area was papers introducing new datasets and new tasks (8 papers). There were a number of analysis papers as well (6 papers), many offering critical evaluation of current summarization datasets and evaluation metrics. Finally, there were 3 papers introducing new evaluation techniques (5%) and one theory paper.
 
-![high-level distribution of papers](assets/PapersPieChart.png "high-level distribution of papers")
+![high-level distribution of papers](https://rahuljha.github.io/assets/PapersPieChart.png)
 
 Let’s now look into the details of each of those clusters, starting from the biggest one: Techniques.
 
