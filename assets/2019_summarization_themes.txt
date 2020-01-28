@@ -38,6 +38,7 @@
     4. https://www.aclweb.org/anthology/P19-1504.pdf	Generating Summaries with Topic Templates and Structured Convolutional Decoders
     5. https://www.aclweb.org/anthology/D19-1323.pdf	An Entity-Driven Framework for Abstractive Summarization
     6. https://www.aclweb.org/anthology/N19-1173.pdf	Single Document Summarization as Tree Induction
+    7. https://www.aclweb.org/anthology/D19-1297.pdf	Attribute-aware Sequence Network for Review Summarization
 *** unsupervised methods
     2. https://www.aclweb.org/anthology/P19-1628.pdf	Sentence Centrality Revisited for Unsupervised Summarization
     3. https://www.aclweb.org/anthology/D19-1389.pdf	{B}ottle{S}um: Unsupervised and Self-supervised Sentence Summarization using the Information Bottleneck Principle
@@ -60,7 +61,7 @@
     1. https://www.aclweb.org/anthology/P19-1659.pdf	Multimodal Abstractive Summarization for How2 Videos
     2. https://www.aclweb.org/anthology/P19-1210.pdf	Keep Meeting Summaries on Topic: Abstractive Multi-Modal Meeting Summarization
 *** Use additional constraints
-    1. https://www.aclweb.org/anthology/D19-1297.pdf	Attribute-aware Sequence Network for Review Summarization
+
 *** Uncategorized
     1. https://www.aclweb.org/anthology/D19-1298.pdf	Extractive Summarization of Long Documents by Combining Global and Local Context
     2. https://www.aclweb.org/anthology/D19-1300.pdf	Reading Like {HER}: Human Reading Inspired Extractive Summarization
