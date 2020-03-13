@@ -5,7 +5,7 @@
 layout: home
 ---
 
-![Profile Picture](/assets/brewery.jpg){:width="150px"}
+![Profile Picture](/assets/yellowstone cropped.jpeg){:width="150px"}
 
 I am an applied scientist at Microsoft working on Natural Language Processing and Machine Learning problems. I've worked on ads relevance ranking (Bing), dialog and language understanding (Cortana) and document summarization (Office365). 
 
