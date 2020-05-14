@@ -5,7 +5,7 @@ permalink: /publications/
 ---
 
 # Publications
-* Rahul Jha, Keping Bi, Yang Li, Mahdi Pakdaman, Asli Celikyilmaz, Ivan Zhibodev, Kieran McDonald. **Artemis: A Novel Annotation Methodology for Indicative Single Document Summarization**, arXiv preprint arXiv:2005.02146 (2020). ([PDF](https://arxiv.org/pdf/2005.02146))
+* Rahul Jha, Keping Bi, Yang Li, Mahdi Pakdaman, Asli Celikyilmaz, Ivan Zhiboedov, Kieran McDonald. **Artemis: A Novel Annotation Methodology for Indicative Single Document Summarization**, arXiv preprint arXiv:2005.02146 (2020). ([PDF](https://arxiv.org/pdf/2005.02146))
 * Keping Bi, Rahul Jha, W. Bruce Croft and Asli Çelikyilmaz. **AREDSUM: Adaptive Redundancy-Aware Iterative Sentence Ranking for Extractive Document Summarization.**,  arXiv preprint arXiv:2004.06176 (2020).([PDF](https://arxiv.org/pdf/2004.06176.pdf))
 * Kunho Kim, Rahul Jha, Kyle Williams, Alex Marin and Imed Zitouni, **Slot Tagging for Task Oriented Spoken Language Understanding in Human-to-human Conversation Scenarios**, CoNLL, 2019  ([PDF](https://www.aclweb.org/anthology/K19-1071.pdf))
 * Sungjin Lee and Rahul Jha. **Zero-Shot Adaptive Transfer for Conversational Language Understanding**, AAAI, 2019 ([PDF](https://arxiv.org/pdf/1808.10059.pdf))
