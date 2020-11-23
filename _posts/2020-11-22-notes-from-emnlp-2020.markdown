@@ -8,7 +8,7 @@ Here were the main ways in which you could choose to spend time at the conferenc
 *	a gather town space for meeting up with people and poster sessions
 *	live streams for keynotes
 
-Given all these options, I found it easy to organize my time in a flexible way to get the most out of the conference. I reviewed the zoom sessions for the tracks I was interested in, looked at the pre-recorded talks (at 2x speed, w00t!) and attended the zoom sessions that had a good density of papers I found relevant to me.
+Given all these options, I found it easy to organize my time in a flexible way to get the most out of the conference. I reviewed the sessions for the tracks I was interested in, looked at the pre-recorded talks (at 2x speed, w00t!) and attended the zoom sessions that had a good density of papers I found relevant to me.
 
 Apart from the zoom sessions and the scheduled keynotes, I split the rest of the time between watching pre-recorded talks and meeting people in the gather space. The gather space worked really well, even better than a physical conference lobby in some cases, since you could quickly look at who was around.
 
@@ -16,7 +16,9 @@ Apart from the zoom sessions and the scheduled keynotes, I split the rest of the
 
 ###	Multi-View Conversation Summarization
 (Chen and Yang, 2020) propose an interesting method for conversation summarization. The main thesis is that we can build better summaries by looking at the structure of the conversation from different views. They first extract two views from the conversation: a topic view and a stage view. For topic view, the conversation is segmented into topic segments using C99 with Sentence-BERT for sentence representations. The stage view is modeled by an HMM with a fixed set of hidden states. A good way to think about these is that different conversations will have different topics, but the same stages. Apart from these two, there is also the global view that creates one block for the entire conversation, and a discrete view that puts each utterance in a separate block.
+
 The model itself is pretty intuitive: given a view, they obtain a representation for each block in the view by passing the tokens through BART and using the representation of the first pseudo-token as the block’s representation. To get the representation for the view itself they pass each block through LSTM layers and use the last hidden state to represent the current view. The transformer based decoder attends to all the views when decoding the next token. Their evaluations show that the multi-view setup helps. For me, the paper opened up a different way of thinking about conversational data: we don’t have to restrict ourselves to a single view like topics, we can look at it from multiple views.
+
 In addition to the topic view and stage view (which reminds me of Simone Teufel’s Argumentative Zoning) we can also think in terms of views based on sentiment, speaker intent, entities etc. These different views also relate to attentional and intentional structure of discourse proposed in (Grosz and Sidner, 1986).
 
 ###	Few-shot summarization
@@ -44,7 +46,7 @@ Some takeaways: 1) MoverScore and JS-2 are significantly better than other metri
 I’ll just mention (Bommasani and Cardie, 2020) as well, who also recommend caution in picking summarization datasets since they may contain surprising properties not aligned with the problem area they are used for. Let’s now look at a generation paper.
 
 ###	Sparse text generation
-(Martins et al., 2020) introduce an interesting technique for training text generation systems. This paper is a bit more mathematical compared to the other papers I’ve described. Here’s the problem it targts: when decoding at inference time, deterministic search for the most probable sentence (greedy, beam search) leads to dull and repetitive text, while sampling from the full distribution generates many implausible sentences from the tail of the distribution. Top-k and top-p sampling introduce sparsity at inference time, but the model doesn’t see this sparsity at train time.
+(Martins et al., 2020) introduce an interesting technique for training text generation systems. This paper is a bit more mathematical compared to the other papers I’ve described. Here’s the problem it targets: when decoding at inference time, deterministic search for the most probable sentence (greedy, beam search) leads to dull and repetitive text, while sampling from the full distribution generates many implausible sentences from the tail of the distribution. Top-k and top-p sampling introduce sparsity at inference time, but the model doesn’t see this sparsity at train time.
 
 The authors propose replacing the softmax with entmax, which generates sparse probability distributions. Like softmax, entmax has an associated loss, which means the sparsity can be learnt during training. In addition to the loss, the authors also present three new evaluation metrics for text generation better suited when using sparse distributions (such as the proposed method but also top-k and top-p). Their experiments show that the new sampling procedure generates more diverse text and fewer repetitions compared to top-k and top-p sampling procedures previously proposed.
 
