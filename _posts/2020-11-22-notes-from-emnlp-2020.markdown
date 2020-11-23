@@ -12,8 +12,6 @@ Given all these options, I found it easy to organize my time in a flexible way t
 
 Apart from the zoom sessions and the scheduled keynotes, I split the rest of the time between watching pre-recorded talks and meeting people in the gather space. The gather space worked really well, even better than a physical conference lobby in some cases, since you could quickly look at who was around.
 
-Here, I summarize a few of the interesting papers I saw, the keynotes, panel discussions and a couple of tutorials.
-
 ##	Some Papers
 
 ###	Multi-View Conversation Summarization
@@ -58,7 +56,7 @@ The high-performance NLP tutorial was amazing. It covered a number of topics wit
 
 The text generation tutorial was also nice, but given the time, I only got a chance to skim through it. It contained a lot of useful information about modern methods for text generation, including decoding and learning strategies, evaluation, and challenges in productionizing generation models. Again, slides are [available online](https://nlg-world.github.io/).
 ###	Keynotes
-Clair Cardie gave a great keynote talk describing information extraction through the years. She described how the task started in early 1990’s and then was re-defined as a study of smaller more constrained tasks such as named entity recognition, extraction pattern acquisition, coreference resolution, relation extraction, entity linking etc.
+Claire Cardie gave a great keynote talk describing information extraction through the years. She described how the task started in early 1990’s and then was re-defined as a study of smaller more constrained tasks such as named entity recognition, extraction pattern acquisition, coreference resolution, relation extraction, entity linking etc.
 
 She also described the evolution in the modeling approaches. Initially we had ML-based pipelines, where the output of each stage is passed as an input to the next stage. This is easy to setup but has problems where errors in upstream components add up. These methods led to joint inference methods (such as Integer Linear Programming or ILP based methods), where we still use separate models but keep the top-k results and do joint optimization at inference time. This allows modeling of global constraints on output structure as well. This led to joint learning methods where the different models are trained jointly, but still are feature-based. Finally, we now have end-to-end neural methods. The transition from pipeline based ML to joint inferencing is very relevant to production systems, where joint inferencing provides a cheaper way of having a decomposable system that still has some check against propagating errors and allows for global constraints.
 
