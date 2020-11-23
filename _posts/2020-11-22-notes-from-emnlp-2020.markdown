@@ -1,7 +1,7 @@
 
 EMNLP 2020 was my first virtual conference. I started the week with doubts about how effective the conference format would be, but am finishing the week thoroughly satisfied. Below, I share some notes from the conference. I start with some general notes about the virtual conference experience, followed by a brief summary of some papers that caught my attention, followed by recaps of the invited talks/panels that I had the time to attend.
 
-#	Virtual Conference Experience
+##	Virtual Conference Experience
 Here were the main ways in which you could choose to spend time at the conference:
 *	10 min recorded talks for all conference papers, workshop papers and tutorials, which you can watch anytime
 *	1 hour zoom sessions for different tracks (e.g. summarization, question answering etc.), which mimic oral sessions
@@ -9,9 +9,12 @@ Here were the main ways in which you could choose to spend time at the conferenc
 *	live streams for keynotes
 
 Given all these options, I found it easy to organize my time in a flexible way to get the most out of the conference. I reviewed the zoom sessions for the tracks I was interested in, looked at the pre-recorded talks (at 2x speed, w00t!) and attended the zoom sessions that had a good density of papers I found relevant to me.
+
 Apart from the zoom sessions and the scheduled keynotes, I split the rest of the time between watching pre-recorded talks and meeting people in the gather space. The gather space worked really well, even better than a physical conference lobby in some cases, since you could quickly look at who was around.
 
-#	Some Papers
+Here, I summarize a few of the interesting papers I saw, the keynotes, panel discussions and a couple of tutorials.
+
+##	Some Papers
 
 ###	Multi-View Conversation Summarization
 (Chen and Yang, 2020) propose an interesting method for conversation summarization. The main thesis is that we can build better summaries by looking at the structure of the conversation from different views. They first extract two views from the conversation: a topic view and a stage view. For topic view, the conversation is segmented into topic segments using C99 with Sentence-BERT for sentence representations. The stage view is modeled by an HMM with a fixed set of hidden states. A good way to think about these is that different conversations will have different topics, but the same stages. Apart from these two, there is also the global view that creates one block for the entire conversation, and a discrete view that puts each utterance in a separate block.
@@ -42,12 +45,12 @@ Some takeaways: 1) MoverScore and JS-2 are significantly better than other metri
 
 I’ll just mention (Bommasani and Cardie, 2020) as well, who also recommend caution in picking summarization datasets since they may contain surprising properties not aligned with the problem area they are used for. Let’s now look at a generation paper.
 
-##	Sparse text generation
+###	Sparse text generation
 (Martins et al., 2020) introduce an interesting technique for training text generation systems. This paper is a bit more mathematical compared to the other papers I’ve described. Here’s the problem it targts: when decoding at inference time, deterministic search for the most probable sentence (greedy, beam search) leads to dull and repetitive text, while sampling from the full distribution generates many implausible sentences from the tail of the distribution. Top-k and top-p sampling introduce sparsity at inference time, but the model doesn’t see this sparsity at train time.
 
 The authors propose replacing the softmax with entmax, which generates sparse probability distributions. Like softmax, entmax has an associated loss, which means the sparsity can be learnt during training. In addition to the loss, the authors also present three new evaluation metrics for text generation better suited when using sparse distributions (such as the proposed method but also top-k and top-p). Their experiments show that the new sampling procedure generates more diverse text and fewer repetitions compared to top-k and top-p sampling procedures previously proposed.
 
-# Other Talks
+## Other Talks
 ###	Tutorials
 There were a number of tutorials at EMNLP, I looked at two of them.
 
@@ -72,11 +75,11 @@ The industry panel had a lot of great discussion, I’ll mention some highlights
 
 Finally, the ethics panel had a lot of debate about the right way of incorporating ethical considerations into our work. Some concerns were that academics are not trained to understand the long-term impact of their work and they can’t be expected to take responsibility of every possible application that their work is used for. Also, cultures have different ideas about what is ethical, and you don’t want to restrict research independence. The counterpoint was that the ACL community is trying to involve researchers from different communities, and the work is right now focused on guidelines and self-reporting and not any specific restrictions. This is going to be a very important area for the community moving forward, and it was good to see an open discussion with varying opinions.
 
-# Final thoughts
+## Final thoughts
 
 I had a wonderful time at EMNLP 2020 and learnt a lot. Thanks to the organizers for creating such a great event!
 
-# Bibliography
+## Bibliography
 
 Manik Bhandari, Pranav Narayan Gour, Atabak Ashfaq, Pengfei Liu, and Graham Neubig. 2020. Re-evaluating evaluation in text summarization. In Proceedings of the 2020 Conference on Empirical Methods in Natural Language Processing (EMNLP), pages 9347–9359, Online, November. Association for Computational Linguistics.
 
