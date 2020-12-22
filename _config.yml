@@ -24,7 +24,7 @@ github_username:  rahuljha
 
 # Build settings
 markdown: kramdown
-theme: bulma-clean-theme
+remote_theme: chrisrhymes/bulma-clean-theme
 plugins:
   - jekyll-feed
 
