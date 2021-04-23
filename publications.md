@@ -5,10 +5,11 @@ permalink: /publications/
 ---
 
 # Publications
-* Rahul Jha, Keping Bi, Yang Li, Mahdi Pakdaman, Asli Celikyilmaz, Ivan Zhiboedov, Kieran McDonald. **Artemis: A Novel Annotation Methodology for Indicative Single Document Summarization**, EMNLP Workshop on Evaluation and Comparison for NLP systems (2020). ([PDF](https://arxiv.org/pdf/2005.02146))
-* Keping Bi, Rahul Jha, W. Bruce Croft and Asli Çelikyilmaz. **AREDSUM: Adaptive Redundancy-Aware Iterative Sentence Ranking for Extractive Document Summarization.**,  arXiv preprint arXiv:2004.06176 (2020).([PDF](https://arxiv.org/pdf/2004.06176.pdf))
-* Kunho Kim, Rahul Jha, Kyle Williams, Alex Marin and Imed Zitouni, **Slot Tagging for Task Oriented Spoken Language Understanding in Human-to-human Conversation Scenarios**, CoNLL, 2019  ([PDF](https://www.aclweb.org/anthology/K19-1071.pdf))
-* Sungjin Lee and Rahul Jha. **Zero-Shot Adaptive Transfer for Conversational Language Understanding**, AAAI, 2019 ([PDF](https://arxiv.org/pdf/1808.10059.pdf))
+* Ming Zhong, Da Yin, Tao Yu, Ahmad Zaidi, Mutethia Mutuma, Rahul Jha, Ahmed H. Awadallah, Asli Celikyilmaz, Yang Liu, Xipeng Qiu, Dragomir Radev. **QMSum: A New Benchmark for Query-based Multi-domain Meeting Summarization.** NAACL, 2021. ([PDF](https://arxiv.org/abs/2104.05938))
+* Keping Bi, Rahul Jha, W. Bruce Croft and Asli Çelikyilmaz. **AREDSUM: Adaptive Redundancy-Aware Iterative Sentence Ranking for Extractive Document Summarization.**  EACL, 2021. ([PDF](https://arxiv.org/pdf/2004.06176.pdf))
+* Rahul Jha, Keping Bi, Yang Li, Mahdi Pakdaman, Asli Celikyilmaz, Ivan Zhiboedov, Kieran McDonald. **Artemis: A Novel Annotation Methodology for Indicative Single Document Summarization.** EMNLP Workshop on Evaluation and Comparison for NLP systems (2020). ([PDF](https://arxiv.org/pdf/2005.02146))
+* Kunho Kim, Rahul Jha, Kyle Williams, Alex Marin and Imed Zitouni, **Slot Tagging for Task Oriented Spoken Language Understanding in Human-to-human Conversation Scenarios.** CoNLL, 2019  ([PDF](https://www.aclweb.org/anthology/K19-1071.pdf))
+* Sungjin Lee and Rahul Jha. **Zero-Shot Adaptive Transfer for Conversational Language Understanding.** AAAI, 2019 ([PDF](https://arxiv.org/pdf/1808.10059.pdf))
 * Rahul Jha, Alex Marin, Suvamsh Shivaprasad and Imed Zitouni. **Bag of Experts Architectures for Model Reuse in Conversational Language Understanding.** NAACL, 2018. ([PDF](http://aclweb.org/anthology/N18-3019))
 * Rahul Jha, Amjad Abu-Jbara, Vahed Qazvinian and Dragomir Radev. **NLP Driven Citation Analysis for Scientometrics.** Journal of Natural Language Engineering, 2016. ([PDF](/assets/aan_jnle_CR.pdf))
 * Rahul Jha, Catherine Finegan-Dollak, Ben King, Reed Coke and Dragomir Radev. **Content Models for Survey Generation: A Factoid-Based Evaluation.** Proceedings of the Annual Meeting of the Association for Computational Linguistics, 2015. ([PDF](http://www.aclweb.org/anthology/P15-1043))
