@@ -16,7 +16,7 @@
 title: Rahul Jha
 email: rahuljh.ml@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  I am an applied scientist working at Microsoft. My expertise is in natural language processing and machine learning.
+  I am an applied science tech-lead at Microsoft working on Recommendation and Ranking, Natural Language Processing and Machine Learning problems. Some of the projects I've worked on are ads relevance ranking, dialog and language understanding, document summarization and content recommendation.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: rahuljha
