@@ -7,7 +7,7 @@ layout: home
 
 ![Profile Picture](/assets/thalia_square.jpeg){:width="150px"}
 
-I am an applied scientist at Microsoft working on Natural Language Processing and Machine Learning problems. I've worked on ads relevance ranking (Bing), dialog and language understanding (Cortana) and document summarization (Office365). 
+I am an applied science tech-lead at Microsoft working on Recommendation and Ranking, Natural Language Processing and Machine Learning problems. Some of the projects I've worked on are ads relevance ranking, dialog and language understanding, document summarization and content recommendation. 
 
 Before Microsoft, I got my PhD from University of Michigan in 2015 working under Prof. Dragomir Radev ([now at Yale](https://yale-lily.github.io/)). My thesis work focussed on automatic survey generation of scientific topics.
 
