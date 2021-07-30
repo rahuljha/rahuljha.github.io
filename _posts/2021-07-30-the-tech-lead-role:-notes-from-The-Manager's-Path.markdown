@@ -26,15 +26,15 @@ As a tech-lead, you need to be able to step away from the code and figure out ho
 
 As you move forward in your career, you need to understand how to break down work that has complexity beyond the scope of what you can do as an individual. Project management for a long-running, team-based project is not what most people consider fun. It can be tedious and sometimes kind of scary. But the alternative is the project failing slower, not faster. Here are some guidelines:
 
-·    Break down the work
+* Break down the work
 
-·    Push through the details and the unknowns
+* Push through the details and the unknowns
 
-·    Run the project and adjust the plan as you go
+* Run the project and adjust the plan as you go
 
-·    Use the insights gained in the planning process to manage requirements changes
+* Use the insights gained in the planning process to manage requirements changes
 
-·    Revisit the details as you get close to completion
+* Revisit the details as you get close to completion
 
 *[My notes: Project management is a big part of tech-leading. For applied science projects with the added uncertainties due to science unknowns, front-loading the work that reduces uncertainty about the science aspects of the project is even more important.]*
 
