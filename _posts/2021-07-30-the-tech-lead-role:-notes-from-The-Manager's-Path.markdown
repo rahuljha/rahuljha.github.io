@@ -52,7 +52,7 @@ As you move forward in your career, you need to understand how to break down wor
 
 # Closing thoughts
 
-Camille has done a good job of describing details of the tech-lead role that new or aspiring tech-leads would want to be aware of. The tech-lead role as described by her is very similar to what I’ve experienced as a science tech-lead in MSAI. Although none of the stuff was brand-new for me, her guidance on how to handle different challenges of the role were very useful!
+*Camille has done a good job of describing details of the tech-lead role that new or aspiring tech-leads would want to be aware of. The tech-lead role as described by her is very similar to what I’ve experienced as a science tech-lead in MSAI. Although none of the stuff was brand-new for me, her guidance on how to handle different challenges of the role were very useful!*
 
 # Further reading
 
