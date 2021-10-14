@@ -1,4 +1,4 @@
-![community recommendation](assets/community.jpg)
+![community recommendation](https://rahuljha.github.io/assets/community.jpg)
 
 For those of us working on recommendation systems, there is nothing like hearing from a consumer: "I discovered something through your system that I would never have seen otherwise!" This motivates us to make our systems more personalized and valuable for our consumers.
 
