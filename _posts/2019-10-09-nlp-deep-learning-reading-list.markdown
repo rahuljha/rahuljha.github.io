@@ -1,12 +1,18 @@
 Here is a list of resources for various topics related to deep learning in NLP. I've organized them so you can read them in the order given.
 
-| Description                                                                                                   | Link                                                                                                                        |
-|---------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------|
-| Yoav's primer, circa 2015. Good for overall background                                                        | https://arxiv.org/abs/1510.00726                                                                                            |
-| LSTM: Colah's nice blog                                                                                       | https://colah.github.io/posts/2015-08-Understanding-LSTMs/                                                                  |
-| CNN                                                                                                           | http://www.wildml.com/2015/11/understanding-convolutional-neural-networks-for-nlp/                                          |
-| Attention: The wildml article is more high level, the heuritech is a litle more detailed                      | http://www.wildml.com/2016/01/attention-and-memory-in-deep-learning-and-nlp/, https://lab.heuritech.com/attention-mechanism |
-| Transformers                                                                                                  | http://jalammar.github.io/illustrated-transformer/ for big picture, http://www.peterbloem.nl/blog/transformers for a more detailed intro                                                                          |
-| BERT                                                                                                          | http://jalammar.github.io/illustrated-bert/                                                                                 |
-| Word representations: Noah has written a nice overview unifying the DL methods with more classical techniques | https://arxiv.org/pdf/1902.06006.pdf                                                                                        |
+*  General background
+   * [Noah's paper](https://arxiv.org/pdf/1902.06006.pdf) on history of word representations 
+   * [Yoav's primer](https://arxiv.org/abs/1510.00726) on DL in NLP, circa 2015
+*  LSTM: [Colah's classic blog](https://colah.github.io/posts/2015-08-Understanding-LSTMs/)
+*  CNN: [WildML article](http://www.wildml.com/2015/11/understanding-convolutional-neural-networks-for-nlp/)
+*  Attention: 
+   * [Wildml article](http://www.wildml.com/2016/01/attention-and-memory-in-deep-learning-and-nlp/) for high level understanding
+   * [Heuritech article](https://lab.heuritech.com/attention-mechanism) for more details
+* Transformers:
+   * [Jay Alamar's blog](http://jalammar.github.io/illustrated-transformer/) for big picture
+   * [Peter Bloem's blog](http://www.peterbloem.nl/blog/transformers) for more detailed intro
+* BERT: [Jay Alamar's blog]( http://jalammar.github.io/illustrated-bert/)
+* Retrieval Transformer: 
+   * [Jay Alamar's blog](https://jalammar.github.io/illustrated-retrieval-transformer/)
+   * [DeepMind blog](https://deepmind.com/blog/article/language-modelling-at-scale)
 
