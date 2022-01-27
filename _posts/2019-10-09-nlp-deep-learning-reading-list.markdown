@@ -15,4 +15,6 @@ Here is a list of resources for various topics related to deep learning in NLP. 
 * Retrieval Transformer: 
    * [Jay Alamar's blog](https://jalammar.github.io/illustrated-retrieval-transformer/)
    * [DeepMind blog](https://deepmind.com/blog/article/language-modelling-at-scale)
+ * Optimizing DNN's
+   * [EMNLP 2020 tutorial](http://gabrielilharco.com/publications/EMNLP_2020_Tutorial__High_Performance_NLP.pdf)
 
