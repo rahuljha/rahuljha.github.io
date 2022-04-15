@@ -5,7 +5,7 @@
 layout: home
 ---
 
-![Profile Picture](/assets/thalia_square.jpeg){:width="150px"}
+![Profile Picture](/assets/apr22.jpg){:width="150px"}
 
 I am an applied science tech-lead at Microsoft working on Recommendation and Ranking, Natural Language Processing and Machine Learning problems. Some of the projects I've worked on are ads relevance ranking, dialog and language understanding, document summarization and content recommendation. 
 
