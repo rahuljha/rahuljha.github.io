@@ -1,6 +1,6 @@
 # [Work-in-progress article]
 
-![opening](assets/LM_blog_opening.png)
+![opening](/assets/LM_blog_opening.png)
 
 Language modelling used to be a sub-area within NLP, but over the past decade, bit-by-bit language models have taken over NLP. In this post, I want to start from the basics of what langauge modeling is and how it took over NLP.
 
