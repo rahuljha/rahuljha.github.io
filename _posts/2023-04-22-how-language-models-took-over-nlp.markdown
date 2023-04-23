@@ -11,9 +11,9 @@ At its most fundamental, a language model is used to determine the probability o
 
 If we use $P(w_1...w_n)$ to denote this probability, it can be broken down like this:
 
-$$ P(w_1...w_i) = P(w_1) \times P(w_2 | w_1) \times ... \times P(w_i | w_1 ... w_{i-1})$$
+$$ P(w_1...w_i) = P(w_1) \times P(w_2 \mid w_1) \times ... \times P(w_i \mid w_1 ... w_{i-1})$$
 
-Since $P(w_i | w_1...w_{i-1})$ can get difficult to compute for long sequences, old-style language modeling often made the simplifying assumption that the probability of a word dpeends only on the the previous few words. So, for example, a trigram model would assume that the prbability of a word depends on only the previous few words.
+Since $P(w_i \mid w_1...w_{i-1})$ can get difficult to compute for long sequences, old-style language modeling often made the simplifying assumption that the probability of a word dpeends only on the the previous few words. So, for example, a trigram model would assume that the prbability of a word depends on only the previous few words.
 
 Language modeling was used as a subtask for several NLP tasks such as speech recognition and machine translation. Many techniques were developed to learn better language models, such as smoothing and clustering. [(Goodman, 2008)](https://arxiv.org/pdf/cs/0108005.pdf) provides a great overview of the work done in these early language models.
 
