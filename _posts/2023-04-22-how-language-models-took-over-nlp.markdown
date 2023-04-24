@@ -1,4 +1,9 @@
 
+---
+title: "How Language Models Took Over NLP"
+date: 2023-04-22
+layout: post
+---
 # [Work-in-progress article]
 
 ![A joke showing a language model trying to predict what it can take over](/assets/lm_history/LM_blog_opening.png)
