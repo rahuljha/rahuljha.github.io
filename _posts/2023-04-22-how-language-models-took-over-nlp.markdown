@@ -68,5 +68,5 @@ Trying to solve this approach in a systematic manner led to the first big step i
 # Should I stop here? : Thoughts about the future
 
 
-## Footnotes
+# Footnotes
 [^1]: When I used this example in an internal talk,one of my colleagues felt compelled to make up me this passage: Is cheese name an important factor? Typically, the flavor profile is given more weight when deciding among several cheeses, but it can also be important to select cheese whose names are easily pronounceable – especially if you're planning to use your cheese board as "smalltalk fodder"
