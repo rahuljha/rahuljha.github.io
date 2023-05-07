@@ -52,9 +52,8 @@ The paper that really demonstrated the power of these distributed representation
 
 This paper led to an explosion of work in learning distributed representations (by now called word embeddings) such as Word2Vec and Glove. They were shown to improve performance in many scenarios, and people quickly adapted their NLP pipelines to leverage word embeddings. By 2015, I saw this really funny tweet when walking around in EMNLP. But it was also true, the era of language models had arrived. 
 
-![A funny tweet about embeddings taking over NLP](/assets/lm_history/HipTweet.png)
-
-
+|![A funny tweet about embeddings taking over NLP](/assets/lm_history/HipTweet.png)|
+|:--:|
 
 [comment]: <> ( * Predict don't count paper https://aclanthology.org/P14-1023.pdf)
 
