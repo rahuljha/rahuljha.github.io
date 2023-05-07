@@ -50,7 +50,7 @@ Now, when there sequence like ``[Tomorrow, is, Monday]`` in your training data, 
 
 The paper that really demonstrated the power of these distributed representations is my all time favorite paper: NLP from scratch [(Collobert et al., 2011)](https://www.jmlr.org/papers/volume12/collobert11a/collobert11a.pdf). This paper was the first paper that built a unified neural network architecture for many NLP tasks and demonstrated that learning unsupervised distributed representations of words can improve performance across many tasks. 
 
-This paper led to an explosion of work in learning distributed representations (by now called word embeddings) such as Word2Vec and Glove. They were shown to improve performance in many scenarios, and people quickly adapted their NLP pipelines to leverage word embeddings. By 2015, I saw this really funny tweet when walking around in EMNLP. But it was also true, the era of language models had arrived. 
+This paper led to an explosion of work in learning distributed representations (by now called word embeddings) such as Word2Vec and Glove. They were shown to improve performance in many scenarios, and people quickly adapted their NLP pipelines to leverage word embeddings. By 2015, I saw this [really funny tweet](https://twitter.com/coren42/status/606246574272831488) when walking around in EMNLP. But it was also true, the era of language models had arrived. 
 
 |![A funny tweet about embeddings taking over NLP](/assets/lm_history/HipTweet.png)|
 |:--:|
