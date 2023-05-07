@@ -22,9 +22,9 @@ $$ P(w_1...w_i) = P(w_1) \times P(w_2 \mid w_1) \times ... \times P(w_i \mid w_1
 
 Here $P(w_i \mid w_1...w_{i-1})$ is the conditional probability of observing $w_i$ given that you observed word sequence $[w_1...w_{i-1}]$ before. Since this probability can get difficult to compute for long sequences, old-style language modeling often made the simplifying assumption that the probability of a word dpeends only on the the previous few words. So, for example, a trigram model would assume that the probability of a word depends on only the previous two words, so you just need to estimate $P(w_i \mid w_{i-2}w_{i-1})$. 
 
-These probabilities can be estimated simply by counting the occurences of word sequences in your data. For example, if you wanted to estimate the probability of $P(my, name, is | my, name)$, you count the number of times you saw the words [$my, name, is$] (say 30,000 times) and the number of times you saw the words [$my, name$] (say 40,000). Then your probability would be:
+These probabilities can be estimated simply by counting the occurences of word sequences in your data. For example, if you wanted to estimate the probability of $P(my, name, is \mid my, name)$, you count the number of times you saw the words [$my, name, is$] (say 30,000 times) and the number of times you saw the words [$my, name$] (say 40,000). Then your probability would be:
 
-$$ P(my, name, is | my, name) = \frac{count([my, name, is])}{count([my, name])} = \frac{30000}{40000} = 0.75$$
+$$ P(my, name, is \mid my, name) = \frac{count([my, name, is])}{count([my, name])} = \frac{30000}{40000} = 0.75$$
 
 This can be noisy because of the limitations of the dataset, for example, some sequences may never occur. Many techniques were developed to learn better language models, such as smoothing and clustering. [(Goodman, 2008)](https://arxiv.org/pdf/cs/0108005.pdf) provides a great overview of the work done in these era of language modeling. These early language models were a component for several NLP tasks such as speech recognition and machine translation. 
 
