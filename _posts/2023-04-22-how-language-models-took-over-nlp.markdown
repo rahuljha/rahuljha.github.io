@@ -31,7 +31,7 @@ This can be noisy because of the limitations of the dataset, for example, some s
 All these approaches depended on using words as discrete tokens. One problem with this approach is that you can't generalize to a new sequence of words even if you have seen a sequence of similar words. For example, if you have seen the sequence ``[Tomorrow, is, Monday]`` in your data, you should be able to assign a higher probability to ``[Tomorrow, is, Tuesday]``, since ``Monday`` and ``Tuesday`` are similar words. But a purely token based approach like we discussed above can't do that. Trying to solve this problem in a systematic manner led to the first big step in making language modeling a cornerstone for many NLP tasks [^3]. 
 
 
-# Language modeling with shared representations
+# Language models become a substrate for NLP
 
 So how do you learn about sequences of words that never appear together in your dataset? Think about how you process language for a minute. When you see a sequence like ``[My, calendar, is, fully, booked, on, Monday]``, even if this is the first time you're seeing this sentence, you know that any day of the week can appear instead of ``Monday``. That's because you know words like ``Monday`` and ``Tuesday`` are related. 
 
@@ -58,13 +58,15 @@ This paper led to an explosion of work in learning distributed representations (
 
 [comment]: <> ( * Predict don't count paper https://aclanthology.org/P14-1023.pdf)
 
-# Learning contextual representations 
+# Language models take over NLP 
 
- * Elmo
- * GPT
- * BERT
+The onslaught of language models as a substrate continued over the next several years. The main trends were contextual representations and the pre-train and fine-tune paradigm, as exemplified by Elmo, BERT and GPT architectures. (Of course this)
 
-# Early evidence of zero-shot and few-shot learning
+This has been covered in details elsewhere (Elmar's article), so I'll just summarize this. Contextual means. Pre-train and Fine-tune means. (Transformer was essential to this because it allowed this sort of scaling, read this article for more details)
+
+GPT was a language model similar to what we saw initially. Given an input sequence, it tries to predict the next token. However, scaling this simple architecture led 
+
+(Early evidence of zero-shot and few-shot learning)
 
  * GPT 2[(Radford et al., 2019)](https://d4mucfpksywv.cloudfront.net/better-language-models/language-models.pdf)
  * T5 [(Raffel et al. 2020)](https://arxiv.org/pdf/1910.10683.pdf)
@@ -78,7 +80,6 @@ This paper led to an explosion of work in learning distributed representations (
  |:--:|
  |T5|
 
- # Large language models take over NLP
 
  * GPT3 [(Brown et al. 2020)](https://arxiv.org/pdf/2005.14165.pdf)
  * InstructGPT
