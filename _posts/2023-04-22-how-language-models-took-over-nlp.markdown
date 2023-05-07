@@ -54,6 +54,7 @@ This paper led to an explosion of work in learning distributed representations (
 
 |![A funny tweet about embeddings taking over NLP](/assets/lm_history/HipTweet.png)|
 |:--:|
+||
 
 [comment]: <> ( * Predict don't count paper https://aclanthology.org/P14-1023.pdf)
 
