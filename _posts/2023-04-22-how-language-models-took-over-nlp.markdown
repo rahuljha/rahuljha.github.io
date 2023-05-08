@@ -50,9 +50,10 @@ The paper that really demonstrated the power of these distributed representation
 
 This paper led to an explosion of work in learning distributed representations (by now called word embeddings) such as Word2Vec and Glove. They were shown to improve performance in many scenarios, and people quickly adapted their NLP pipelines to leverage word embeddings. By 2015, I saw this [really funny tweet](https://twitter.com/coren42/status/606246574272831488) when walking around in EMNLP. But it was also true, the era of language models had arrived. 
 
-|![A funny tweet about embeddings taking over NLP](/assets/lm_history/HipTweet.png)|
+|<img src="https://rahuljha.github.io/assets/lm_history/HipTweet.png" style = "width: 80%; display: block; margin-left: auto; margin-right: auto;">|
 |:--:|
 ||
+
 
 [comment]: <> ( * Predict don't count paper https://aclanthology.org/P14-1023.pdf)
 
@@ -66,7 +67,7 @@ One of the models that came in this era was OpenAI's GPT architecture. This was 
 
 The next iteration of GPT, with the uninspring name of GPT 2 [(Radford et al., 2019)](https://d4mucfpksywv.cloudfront.net/better-language-models/language-models.pdf) paper showed some intereseting results about how the language model could do tasks it was never trained for, like machine translation and summarization. The authors hypothesized that this was because datasets contain natural demonstrations for many tasks. For example, below figure taken from the paper shows examples of English to French and back translations occuring naturally in data.
 
-  |![GPT2](/assets/lm_history/GPT2.png)|
+ |<img src="https://rahuljha.github.io/assets/lm_history/GPT2.png" style = "width: 60%; display: block; margin-left: auto; margin-right: auto;">|
  |:--:|
  |Figure from GPT2 paper showing naturally occuring demonstrations for English to French machine translation|
 
@@ -78,7 +79,7 @@ This was a tantalizing idea. It meant that you didn't need to train separate mod
 
 These models really showed that a large language model trained on a huge amount of carefully prepared data could be a general NLP system. But we hadn't seen all. The GPT3 paper [(Brown et al. 2020)](https://arxiv.org/pdf/2005.14165.pdf) demonstrated that with a sufficiently large model could even be made to do new tasks with just general instructions and only a few examples. You can see some of the examples from the paper in the figure below. The interesting thing here is that you're not doing any additional fine-tuning on language model at all. You just give the task description, along with the examples, as an input to the language model, and ask it to complete the text. 
 
-|![GPT3](/assets/lm_history/GPT3.png)|
+|<img src="https://rahuljha.github.io/assets/lm_history/GPT3.png" style = "width: 50%; display: block; margin-left: auto; margin-right: auto;">|
  |:--:|
  |Examples of zero-shot, one-shot and few-shot methods of performing a task with GPT3|
 
