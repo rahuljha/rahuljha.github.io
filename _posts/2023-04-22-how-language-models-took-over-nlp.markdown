@@ -85,13 +85,13 @@ These models really showed that a large language model trained on a huge amount 
 
 GPT3 was really powerful, but it was still tricky to figure exactly what text input to use to get the best results for a task. People started looking into ["prompt engineering"](https://arxiv.org/abs/2107.13586), or the best way to convert your input into a prompt to get the best results on a task. The model was really capable, but it was sometimes hard to get it to do exactly what you needed it to do.
 
-
-The next big step in this direction was using Reinforcement Learning with Human Feedback (RLHF).
-
+[InstructGPT](https://arxiv.org/abs/2203.02155) presented RLHF (Reinforcement Learning with Human Feedback) as a solution to this problem. RLHF has been explained really well [in this article](https://huggingface.co/blog/rlhf), I won't go over the details here. Essentially, it uses a Reinforcement Learning setup to "align" the language model so it can better understand what it is being asked to do. A really large language model with instruction fine-tuning using RLHF is the recipe behind the recent success of language models like chatGPT. 
 
 # What's next?
 
-GPT4
+The recent large language models are really impressive. Playing around with GPT4, I am amazed at how well it responds to complex instructions, and the range of things it's able to do well. It really feels like we could replace all of NLP with these large language models (some argue they could [replace all of AI](https://arxiv.org/abs/2303.12712), but I wouldn't go so far, yet). 
+
+An exciting recent development is the emergence of a lot of [open-source large language models](https://www.semianalysis.com/p/google-we-have-no-moat-and-neither) that have started to compete with the proprietary language models from openAI and others. This should allow us to make faster progress towards the next generation of language models. I for one, am excited to see where it leads.
 
 
 # Footnotes
