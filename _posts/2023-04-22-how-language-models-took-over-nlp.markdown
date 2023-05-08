@@ -101,4 +101,4 @@ An exciting recent development is the emergence of a lot of [open-source large l
 
 [^3]: I was in the second year of my PhD and implemented parts of this paper in Lua torch (This is pre Tensorflow/PyTorch). Given the number of requests I got for the code, I think this was the only implementation available for a while ([code](https://github.com/rahuljha/nlpfromscratch/tree/master/nlpfromscratch), [presentation](http://www-personal.umich.edu/~benking/resources/reading_group/scratch_rahul.pdf)).
 
-[^4] A big reason for all this progress was the Transformer architecture, which allowed training such big language models in the first place. See this [excellent article](https://peterbloem.nl/blog/transformers) for an introduction. 
+[^4]: A big reason for all this progress was the Transformer architecture, which allowed training such big language models in the first place. See this [excellent article](https://peterbloem.nl/blog/transformers) for an introduction. 
