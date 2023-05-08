@@ -12,8 +12,6 @@ Language modelling used to be a sub-area within NLP [^1], but over the past deca
 
 # What is a language model?
 
-[comment]: <> (My friends call me smooth)
-
 At its most fundamental, a language model is used to determine the probability of a word sequence $[w_1, w_2, ... w_n]$. The probablity depends on the usage for the language in question. For example, the probability of a common word sequence in English like ``[my, name, is]`` should be much higher than the probability of a less common word sequence like ``[is,cheese, name]`` in a reasonable language model [^2].
 
 If we use $P(w_1...w_n)$ to denote this probability, it can be broken down like this:
@@ -46,7 +44,7 @@ How does it work? Let's say you use feature vectors of length 2 for representing
 | ``Monday``    | ``[0.4, 0.5]``    |
 | ``Tuesday``   | ``[0.5, 0.4]``
 
-Now, when there sequence like ``[Tomorrow, is, Monday]`` in your training data, your language model instead sees the sequence ``[[0.2, 0.8], 0.9, 0.3], [0.4, 0.5]]`` and learns to assign it a high probability. The next time you ask the model about ``[Tomorrow, is, Tuesday]``, even though the model may not have seen this exact sequence of words, it can assign a higher probability to it because the vectors for ``Monday`` and ``Tuesday`` are so close together. 
+Now, when there is a sequence like ``[Tomorrow, is, Monday]`` in your training data, your language model instead sees the sequence ``[[0.2, 0.8], 0.9, 0.3], [0.4, 0.5]]`` and learns to assign it a high probability. The next time you ask the model about ``[Tomorrow, is, Tuesday]``, even though the model may not have seen this exact sequence of words, it can assign a higher probability to it because the vectors for ``Monday`` and ``Tuesday`` are so close together. 
 
 The paper that really demonstrated the power of these distributed representations is my all time favorite paper: NLP from scratch [(Collobert et al., 2011)](https://www.jmlr.org/papers/volume12/collobert11a/collobert11a.pdf). This paper was the first paper that built a unified neural network architecture for many NLP tasks and demonstrated that learning unsupervised distributed representations of words can improve performance across many tasks. 
 
@@ -60,39 +58,39 @@ This paper led to an explosion of work in learning distributed representations (
 
 # Language models take over NLP 
 
-The onslaught of language models as a substrate continued over the next several years. The main trends were contextual representations and the pre-train and fine-tune paradigm, as exemplified by Elmo, BERT and GPT architectures. (Of course this)
+The march of language models as a substrate continued over the next several years. The main trends were contextual representations and the pre-train and fine-tune paradigm, as exemplified by Elmo, BERT and GPT architectures.
 
-This has been covered in details elsewhere (Elmar's article), so I'll just summarize this. Contextual means. Pre-train and Fine-tune means. (Transformer was essential to this because it allowed this sort of scaling, read this article for more details)
+This progress has been covered a lot [elsewhere](https://jalammar.github.io/illustrated-bert/), so I'll not go into the details here. In summary, the dominant NLP paradigm by 2019 was the pre-train and fine-tune paradigm. You pretrained a large model using a language modeling objective on large amount of unlabled data. Then for a new task, you added a small layer on the top and fine-tuned the model using task-specific labeled data. [^4]
 
-GPT was a language model similar to what we saw initially. Given an input sequence, it tries to predict the next token. However, scaling this simple architecture led 
+One of the models that came in this era was OpenAI's GPT architecture. This was a decoder-only model, which just means that it was trained to generate text in a left-to-right fashion, similar to the language models we saw in the first section. Given an input sequence, GPT would predict the next token in the sequence. Scaling this simple architecture to larger size started to show some surprising results. 
 
-(Early evidence of zero-shot and few-shot learning)
-
- * GPT 2[(Radford et al., 2019)](https://d4mucfpksywv.cloudfront.net/better-language-models/language-models.pdf)
- * T5 [(Raffel et al. 2020)](https://arxiv.org/pdf/1910.10683.pdf)
+The next iteration of GPT, with the uninspring name of GPT 2 [(Radford et al., 2019)](https://d4mucfpksywv.cloudfront.net/better-language-models/language-models.pdf) paper showed some intereseting results about how the language model could do tasks it was never trained for, like machine translation and summarization. The authors hypothesized that this was because datasets contain natural demonstrations for many tasks. For example, below figure taken from the paper shows examples of English to French and back translations occuring naturally in data.
 
   |![GPT2](/assets/lm_history/GPT2.png)|
  |:--:|
- |GPT2|
+ |Figure from GPT2 paper showing naturally occuring demonstrations for English to French machine translation|
 
- 
+This was a tantalizing idea. It meant that you didn't need to train separate models for many NLP tasks, but could just rely on a language modeling architecture trained on large amount of data. Another paper from this time presented the T5 [(Raffel et al. 2020)](https://arxiv.org/pdf/1910.10683.pdf) architecture. They developed a framework where all NLP problems are represented as a text-to-text problem, that is, taking text as an input and text as an output. The figure below from the paper shows how it worked. To translate from English to German, you just give the model the instruction, followed by the sentence to translate, and it spits out the answer, token-by-token.
+
  |![T5](/assets/lm_history/T5.png)|
  |:--:|
- |T5|
+ |The T5 framework where all tasks are represented in a text-to-text framework.|
 
+These models really showed that a large language model trained on a huge amount of carefully prepared data could be a general NLP system. But we hadn't seen all. The GPT3 paper [(Brown et al. 2020)](https://arxiv.org/pdf/2005.14165.pdf) demonstrated that with a sufficiently large model could even be made to do new tasks with just general instructions and only a few examples. You can see some of the examples from the paper in the figure below. The interesting thing here is that you're not doing any additional fine-tuning on language model at all. You just give the task description, along with the examples, as an input to the language model, and ask it to complete the text. 
 
- * GPT3 [(Brown et al. 2020)](https://arxiv.org/pdf/2005.14165.pdf)
- * InstructGPT
- * GPT4
-
-
-  |![GPT3](/assets/lm_history/GPT3.png)|
+|![GPT3](/assets/lm_history/GPT3.png)|
  |:--:|
- |GPT3|
+ |Examples of zero-shot, one-shot and few-shot methods of performing a task with GPT3|
+
+GPT3 was really powerful, but it was still tricky to figure exactly what text input to use to get the best results for a task. People started looking into ["prompt engineering"](https://arxiv.org/abs/2107.13586), or the best way to convert your input into a prompt to get the best results on a task. The model was really capable, but it was sometimes hard to get it to do exactly what you needed it to do.
+
+
+The next big step in this direction was using Reinforcement Learning with Human Feedback (RLHF).
+
 
 # What's next?
 
-*
+GPT4
 
 
 # Footnotes
@@ -101,3 +99,5 @@ GPT was a language model similar to what we saw initially. Given an input sequen
 [^2]: When I used this example in an internal talk,one of my colleagues felt compelled to make up me this passage: *"Is cheese name an important factor? Typically, the flavor profile is given more weight when deciding among several cheeses, but it can also be important to select cheese whose names are easily pronounceable – especially if you're planning to use your cheese board as "smalltalk fodder"*
 
 [^3]: I was in the second year of my PhD and implemented parts of this paper in Lua torch (This is pre Tensorflow/PyTorch). Given the number of requests I got for the code, I think this was the only implementation available for a while ([code](https://github.com/rahuljha/nlpfromscratch/tree/master/nlpfromscratch), [presentation](http://www-personal.umich.edu/~benking/resources/reading_group/scratch_rahul.pdf)).
+
+[^4] A big reason for all this progress was the Transformer architecture, which allowed training such big language models in the first place. See this [excellent article](https://peterbloem.nl/blog/transformers) for an introduction. 
