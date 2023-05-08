@@ -1,14 +1,12 @@
 ---
-title: "[WIP] How Language Models Took Over NLP"
+title: "How Language Models Took Over NLP"
 date: 2023-04-22
 layout: post
 ---
 
-# [Work-in-progress article]
-
 ![A joke showing a language model trying to predict what it can take over](/assets/lm_history/LM_blog_opening.png)
 
-Language modelling used to be a sub-area within NLP [^1], but over the past decade, like the Roman Empire expanding its borders, language models haven taken over NLP and, if you believe recent articles, seem poised to take over all AI. In this article, I want to trace the evolution of language models from their humble beginnings and how they became the dominant paradigm in NLP.
+Language modelling used to be a sub-area within NLP [^1], but over the past decade, like the Roman Empire expanding its borders, language models haven taken over NLP and, if you believe recent articles, seem poised to take over all of AI. In this article, I want to trace the evolution of language models from their humble beginnings and how they became the dominant paradigm in NLP.
 
 # What is a language model?
 
