@@ -62,7 +62,7 @@ Over the next several years, language models kept getting bigger and better. The
 
 [comment]: <> ( * Predict don't count paper https://aclanthology.org/P14-1023.pdf)
 
-# Language models take over NLP ...
+# 2020's: Language models take over NLP ...
 
 One of the important models that came in the previous era was OpenAI's GPT [(Radford et al. 2018)](https://s3-us-west-2.amazonaws.com/openai-assets/research-covers/language-unsupervised/language_understanding_paper.pdf) architecture. This was a decoder-only model, which just means that it was trained to generate text in a left-to-right fashion, similar to the language models we saw in the first section. Given an input sequence, GPT would predict the next token in the sequence. Scaling this simple architecture to larger sizes started to show some surprising results. 
 
