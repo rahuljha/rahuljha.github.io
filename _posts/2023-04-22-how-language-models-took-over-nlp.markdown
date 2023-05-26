@@ -6,9 +6,14 @@ layout: post
 
 ![A joke showing a language model trying to predict what it can take over](/assets/lm_history/LM_blog_opening.png)
 
-Language modelling used to be a sub-area within NLP [^1], but over the past decade, like the Roman Empire expanding its borders, language models haven taken over NLP and, if you believe recent articles, seem poised to take over all of AI. In this article, I want to trace the evolution of language models from their humble beginnings and how they became the dominant paradigm in NLP.
+Language modelling used to be a sub-area within NLP [^1], but over the past decade, language models haven taken over NLP. If you believe recent articles, large language models seem poised to take over all of AI. In this article, I want to trace the evolution of language models from the 80's, when they were estimated using traditional count-based methods and used for a small number of NLP applications, to today where large langauge models are being used as general purpose AI engines for numerous applications, even beyond NLP.
 
-# What is a language model?
+![Diagram showing evolution of LMs in NLP](/assets/lm_history/LM_Evolution.png)
+
+ 
+
+
+# 1980's and 1990's: Language modeling as a sub-area
 
 At its most fundamental, a language model is used to determine the probability of a word sequence $[w_1, w_2, ... w_n]$. The probablity depends on the usage for the language in question. For example, the probability of a common word sequence in English like ``[my, name, is]`` should be much higher than the probability of a less common word sequence like ``[is,cheese, name]`` in a reasonable language model [^2].
 
@@ -27,7 +32,7 @@ This can be noisy because of the limitations of the dataset, for example, some s
 All these approaches depended on using words as discrete tokens. One problem with this approach is that you can't generalize to a new sequence of words even if you have seen a sequence of similar words. For example, if you have seen the sequence ``[Tomorrow, is, Monday]`` in your data, you should be able to assign a higher probability to ``[Tomorrow, is, Tuesday]``, since ``Monday`` and ``Tuesday`` are similar words. But a purely token based approach like we discussed above can't do that. Trying to solve this problem in a systematic manner led to the first big step in making language modeling a cornerstone for many NLP tasks [^3]. 
 
 
-# Language models become a substrate for NLP
+# 2010's: Language models become the dominant NLP paradigm
 
 So how do you learn about sequences of words that never appear together in your dataset? Think about how you process language for a minute. When you see a sequence like ``[My, calendar, is, fully, booked, on, Monday]``, even if this is the first time you're seeing this sentence, you know that any day of the week can appear instead of ``Monday``. That's because you know words like ``Monday`` and ``Tuesday`` are related. 
 
@@ -55,7 +60,7 @@ This paper led to an explosion of work in learning distributed representations (
 
 [comment]: <> ( * Predict don't count paper https://aclanthology.org/P14-1023.pdf)
 
-# Language models take over NLP 
+# Language models take over NLP, and go beyond
 
 The march of language models as a substrate continued over the next several years. The main trends were contextual representations and the pre-train and fine-tune paradigm, as exemplified by Elmo, BERT and GPT architectures.
 
