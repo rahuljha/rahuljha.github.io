@@ -11,5 +11,5 @@ I am a research scientist at Netflix in the Search & Recommendations team workin
 
 I got my PhD from University of Michigan in 2015 working under Prof. Dragomir Radev ([now at Yale](https://yale-lily.github.io/)). My thesis work focussed on automatic survey generation of scientific topics.
 
-Find a complete list of my publications [here](/publications/). I occassionaly blog about topics I am interested in, you can find them below.
+Find a complete list of my publications [here](/publications/). I occasionally blog about topics I am interested in, you can find them below.
 
