@@ -4,7 +4,7 @@ date: 2023-04-22
 layout: post
 ---
 
-![A joke showing a language model trying to predict what it can take over](/assets/lm_history/LM_blog_opening.png)
+<img src="https://rahuljha.github.io/assets/lm_history/LM_blog_opening.png" style = "width: 75%; display: block; margin-left: auto; margin-right: auto;" alt="A joke showing a language model trying to predict what it can take over">
 
 Language modelling used to be a sub-area within NLP [^1], but over the past decade, language models haven taken over NLP and seem poised to take over many other areas of AI. In this article, I want to trace the evolution of language models from the 80's, when they were estimated using traditional count-based methods and used for a small number of NLP applications, to today where large langauge models are being used as general purpose AI engines for numerous applications, even beyond NLP.
 
