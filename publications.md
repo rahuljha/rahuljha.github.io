@@ -5,8 +5,9 @@ permalink: /publications/
 ---
 
 # Publications
-* Zhankui He, Zhouhang Xie, Harald Steck, Dawen Liang, Rahul Jha, Nathan Kallus and Julian McAuley. **Reindex-Then-Adapt: Improving Large Language Models for Conversational Recommendation** Arxiv Preprint, 2024. ([PDF](https://arxiv.org/abs/2405.12119))
-* Zhankui He, Zhouhang Xie, Rahul Jha, Harald Steck, Dawen Liang, Yesu Feng, Bodhisattwa Prasad Majumder, Nathan Kallus and Julian McAuley. **Large Language Models as Zero-Shot Conversational Recommenders** CIKM, 2023. ([PDF](https://arxiv.org/abs/2308.10053))
+* Zhouhang Xie, Junda Wu, Hyunsik Jeon, Zhankui He, Harald Steck, Rahul Jha Jha, Dawen Liang, Nathan Kallus, and Julian Mcauley. **Neighborhood-based collaborative filtering for conversational recommendation.** RecSys, 2024.
+* Zhankui He, Zhouhang Xie, Harald Steck, Dawen Liang, Rahul Jha, Nathan Kallus and Julian McAuley. **Reindex-Then-Adapt: Improving Large Language Models for Conversational Recommendation.** Arxiv Preprint, 2024. ([PDF](https://arxiv.org/abs/2405.12119))
+* Zhankui He, Zhouhang Xie, Rahul Jha, Harald Steck, Dawen Liang, Yesu Feng, Bodhisattwa Prasad Majumder, Nathan Kallus and Julian McAuley. **Large Language Models as Zero-Shot Conversational Recommenders.** CIKM, 2023. ([PDF](https://arxiv.org/abs/2308.10053))
 * Saadia Gabriel, Asli Celikyilmaz, Rahul Jha, Yejin Choi, Jianfeng Gao. **Go-Figure: A Meta Evaluation of Factuality in Summarization.** ACL, 2021. ([Preprint PDF](https://arxiv.org/pdf/2010.12834.pdf))
 * Ming Zhong, Da Yin, Tao Yu, Ahmad Zaidi, Mutethia Mutuma, Rahul Jha, Ahmed H. Awadallah, Asli Celikyilmaz, Yang Liu, Xipeng Qiu, Dragomir Radev. **QMSum: A New Benchmark for Query-based Multi-domain Meeting Summarization.** NAACL, 2021. ([PDF](https://arxiv.org/abs/2104.05938))
 * Keping Bi, Rahul Jha, W. Bruce Croft and Asli Çelikyilmaz. **AREDSUM: Adaptive Redundancy-Aware Iterative Sentence Ranking for Extractive Document Summarization.**  EACL, 2021. ([PDF](https://arxiv.org/pdf/2004.06176.pdf))
