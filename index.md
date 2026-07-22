@@ -7,9 +7,9 @@ layout: home
 
 ![Profile Picture](/assets/apr22.jpg){:width="150px"}
 
-I am a research scientist at Netflix in the Search & Recommendations team working on conversational and interactive recommendations. Previously, I was an applied science tech-lead at Microsoft working on recommendation, ranking, & NLP problems including ads relevance ranking, dialog and language understanding, document summarization and content recommendation.
+I am a research scientist at Netflix working on virtual personas and agentic A/B testing. I have previously worked on different recommendation, ranking, & NLP problems including LLM post-training (at Meta), conversational recommendations (at Netflix), and ads relevance ranking, dialog and language understanding, document summarization and content recommendation (at Microsoft).
 
-I got my PhD from University of Michigan in 2015 working under Prof. Dragomir Radev ([now at Yale](https://yale-lily.github.io/)). My thesis work focussed on automatic survey generation of scientific topics.
+I got my PhD from University of Michigan in 2015 working under Prof. Dragomir Radev. My thesis work focussed on automatic survey generation of scientific topics.
 
 Find a complete list of my publications [here](/publications/). I occasionally blog about topics I am interested in, you can find them below.
 
