@@ -1,8 +1,12 @@
-<img src="https://rahuljha.github.io/assets/agentic_ab/agentic_ab_banner.png" style = "width: 75%; display: block; margin-left: auto; margin-right: auto;" alt="A joke showing a language model trying to predict what it can take over">
+---
+title: "New A/B Test? Call My Agent"
+date: 2026-07-22
+layout: post
+---
+
+![an image showing agents testing a system](https://rahuljha.github.io/assets/agentic_ab/agentic_ab_banner.png)
 
 
-
-# New A/B Test? Call My Agent
 
 A/B testing is the standard way to establish whether a product change actually works: split users into two groups, show one the current experience and the other the proposed change, and compare some outcome metric between the two. This works well, but it is slow. You need a finished implementation, a live rollout, real users exposed to something unproven, and then a multi-week wait before the metric accrues. 
 
