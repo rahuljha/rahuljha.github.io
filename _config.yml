@@ -16,7 +16,7 @@
 title: Rahul Jha
 email: rahuljh.ml@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  I am a research scientist at Netflix in the Search & Recommendations team working on conversational and interactive recommendations.
+  I am a research scientist at Netflix working on LLM driven product understanding.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: rahuljha

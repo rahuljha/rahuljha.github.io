@@ -7,7 +7,7 @@ layout: home
 
 ![Profile Picture](/assets/apr22.jpg){:width="150px"}
 
-I am a research scientist at Netflix working on virtual personas and agentic A/B testing. I have previously worked on different recommendation, ranking, & NLP problems including LLM post-training (at Meta), conversational recommendations (at Netflix), and ads relevance ranking, dialog and language understanding, document summarization and content recommendation (at Microsoft).
+I am a research scientist at Netflix working on LLM driven product understanding. I have previously worked on different recommendation, ranking, & NLP problems including LLM post-training (at Meta), conversational recommendations (at Netflix), and ads relevance ranking, dialog and language understanding, document summarization and content recommendation (at Microsoft).
 
 I got my PhD from University of Michigan in 2015 working under Prof. Dragomir Radev. My thesis work focussed on automatic survey generation of scientific topics.
 
