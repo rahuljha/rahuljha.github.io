@@ -6,6 +6,7 @@ layout: post
 
 ![an image showing agents testing a system](https://rahuljha.github.io/assets/agentic_ab/agentic_ab_banner.png)
 
+_This blog, it's contents and findings do not represent the opinions, practices or beliefs of Netflix or represent anything Netflix does internally. This blog only represents my personal opinions._
 
 
 A/B testing is the standard way to establish whether a product change actually works: split users into two groups, show one the current experience and the other the proposed change, and compare some outcome metric between the two. This works well, but it is slow. You need a finished implementation, a live rollout, real users exposed to something unproven, and then a multi-week wait before the metric accrues. 
@@ -59,3 +60,5 @@ Adding explanations also turns out to help action prediction itself. [Beyond Bel
 Agentic A/B testing is still a young research direction, but recent papers already show it can replicate some aspects of real experiments. [SimGym](https://arxiv.org/abs/2605.19219) validated its simulated results against 50 completed real-world A/B tests and got the direction of the outcome right about 77% of the time, with a real correlation to the size of the effect. [AgentA/B](https://arxiv.org/abs/2504.09723) ran a thousand agents through a live Amazon filter-panel test and matched the direction of a parallel human experiment, even though its agents behaved somewhat differently from real users along the way. 
 
 Despite the progress, I don't see agentic A/B testing completely replacing real A/B tests anytime soon. But I do see them working in conjunction. You could run proposed changes past a population of agents first, and use the result to prune which ideas are actually worth building and testing on real users, instead of putting every candidate through a multi-week rollout. It can also run alongside a live test, adding a layer of insight standard A/B testing doesn't give you on its own: a reason for the effect, not just the size of it. 
+
+_This blog, it's contents and findings do not represent the opinions, practices or beliefs of Netflix or represent anything Netflix does internally. This blog only represents my personal opinions._
