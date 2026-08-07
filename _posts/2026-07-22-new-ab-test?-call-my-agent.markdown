@@ -3,10 +3,9 @@ title: "New A/B Test? Call My Agent"
 date: 2026-07-22
 layout: post
 ---
+_This blog, it's contents and findings do not represent the opinions, practices or beliefs of Netflix or represent anything Netflix does internally. This blog only represents my personal opinions._
 
 ![an image showing agents testing a system](https://rahuljha.github.io/assets/agentic_ab/agentic_ab_banner.png)
-
-_This blog, it's contents and findings do not represent the opinions, practices or beliefs of Netflix or represent anything Netflix does internally. This blog only represents my personal opinions._
 
 
 A/B testing is the standard way to establish whether a product change actually works: split users into two groups, show one the current experience and the other the proposed change, and compare some outcome metric between the two. This works well, but it is slow. You need a finished implementation, a live rollout, real users exposed to something unproven, and then a multi-week wait before the metric accrues. 
