@@ -3,7 +3,7 @@ title: "New A/B Test? Call My Agent"
 date: 2026-07-22
 layout: post
 ---
-_This blog, it's contents and findings do not represent the opinions, practices or beliefs of Netflix or represent anything Netflix does internally. This blog only represents my personal opinions._
+_This blog, its contents and findings do not represent the opinions, practices or beliefs of Netflix or represent anything Netflix does internally. This blog only represents my personal opinions._
 
 ![an image showing agents testing a system](https://rahuljha.github.io/assets/agentic_ab/agentic_ab_banner.png)
 
@@ -60,4 +60,4 @@ Agentic A/B testing is still a young research direction, and there are several s
 
 Despite these limitations, early results are promising, at least in predicting the direction of a test. [SimGym](https://arxiv.org/abs/2605.19219) validated its simulated results against 50 completed real-world A/B tests and got the direction of the outcome right about 77% of the time. [AgentA/B](https://arxiv.org/abs/2504.09723) ran a thousand agents through a live Amazon filter-panel test and matched the direction of a parallel human experiment, even though its agents behaved somewhat differently from real users along the way.
 
-_This blog, it's contents and findings do not represent the opinions, practices or beliefs of Netflix or represent anything Netflix does internally. This blog only represents my personal opinions._
+_This blog, its contents and findings do not represent the opinions, practices or beliefs of Netflix or represent anything Netflix does internally. This blog only represents my personal opinions._
