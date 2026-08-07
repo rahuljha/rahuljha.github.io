@@ -56,7 +56,7 @@ Adding explanations also turns out to help action prediction itself. [Beyond Bel
 
 ## Closing thoughts
 
-Agentic A/B testing is still a young research direction, and there are several shortcomings in existing works. Some common limitations are: simplified perception and action relative to what users actually see, validation in narrow settings, and agents defaulting towards narrower, more typical slice of behavior than real users do. 
+Agentic A/B testing is still a young research direction, and there are several shortcomings in existing works. Some common limitations are: simplified perception and action relative to what users actually see, validation in narrow settings, and agents defaulting towards a narrower, more typical slice of behavior than real users do. 
 
 Despite these limitations, early results are promising, at least in predicting the direction of a test. [SimGym](https://arxiv.org/abs/2605.19219) validated its simulated results against 50 completed real-world A/B tests and got the direction of the outcome right about 77% of the time. [AgentA/B](https://arxiv.org/abs/2504.09723) ran a thousand agents through a live Amazon filter-panel test and matched the direction of a parallel human experiment, even though its agents behaved somewhat differently from real users along the way.
 
