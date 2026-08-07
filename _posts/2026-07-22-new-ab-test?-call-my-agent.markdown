@@ -12,7 +12,7 @@ A/B testing is the standard way to establish whether a product change actually w
 
 With the recent advances in LLMs, a new research stream has started around whether this loop can be shortened by simulating the test first, using AI agents that stand in for real users and interact with the proposed change before it ever goes live. To be able to do this, the agent needs to be able to interact with whatever canvas is being tested, and should represent the user population faithfully. 
 
-Here I cover the main concerns in the design of these agents and how recent papers have tackled it.
+Here I cover some of the concerns in the design of these agents and how recent papers have tackled it.
 
 ## Who's behind the agent?
 
@@ -42,7 +42,7 @@ The simplest regime trains directly on logged action trajectories, with no condi
 
 A step up conditions that same next-action objective on some additional signal about who's acting. [Customer-R1](https://arxiv.org/abs/2510.07230) trains via SFT followed by RL, with the model's input augmented by a real person's demographics, personality, and stated preferences. The conditioning helps: at test time, shuffling that context across users (same trajectories, wrong person's information attached) collapses session-outcome accuracy from 79.45 to 48.41. Conditioning the training signal on the right extra context measurably changes what the model learns to predict, not just how the output is dressed up.
 
-### Generated and filtered trajectories
+### Rejection sampled trajectories
 
 [SimPersona](https://arxiv.org/abs/2605.14205) takes a more involved approach to building the training set itself, rather than to the model or its inputs. It first has an LLM rewrite each real user's raw clickstream into a short, ordered natural-language goal: search this, view that, add to cart, abandon at checkout, preserving the order and identity of what actually happened. A separate agent then tries to carry out that goal on the live storefront from scratch, conditioned on the user's persona signal and a running memory of its own progress, navigating freely rather than being pinned to the original clicks, and emitting a structured action plus a reasoning trace at every step. Not every attempt actually finishes the goal, so a judge model checks each resulting trajectory against the original intent and throws out the ones that fail. Only the trajectories that survive this replicate-then-filter process become training data. 
 
