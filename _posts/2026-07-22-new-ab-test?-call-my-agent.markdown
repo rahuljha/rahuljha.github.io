@@ -10,7 +10,7 @@ _This blog, it's contents and findings do not represent the opinions, practices 
 
 A/B testing is the standard way to establish whether a product change actually works: split users into two groups, show one the current experience and the other the proposed change, and compare some outcome metric between the two. This works well, but it is slow. You need a finished implementation, a live rollout, real users exposed to something unproven, and then a multi-week wait before the metric accrues. 
 
-With the recent advances in LLM, a new research stream has started around whether this loop can be shortened by simulating the test first, using AI agents that stand in for real users and interact with the proposed change before it ever goes live. To be able to do this, the agent needs to be able to interact with whatever canvas is being tested, and should represent the user population faithfully. 
+With the recent advances in LLMs, a new research stream has started around whether this loop can be shortened by simulating the test first, using AI agents that stand in for real users and interact with the proposed change before it ever goes live. To be able to do this, the agent needs to be able to interact with whatever canvas is being tested, and should represent the user population faithfully. 
 
 Here I cover the main concerns in the design of these agents and how recent papers have tackled it.
 
@@ -50,13 +50,13 @@ Why does SimPersona take such a complex approach? It gives you something that re
 
 ## Everything has a reason
 
-Predicting the action alone tells you what a simulated user did. It doesn't tell you why, but that why is useful. A next-action model that says a user would add an item to cart is a data point; a model that also says it did so because the price dropped below a threshold it cares about is something a product team can actually act on. With action prediction you just get metrics, with action prediction with explanations, you get both metrics and insights.
+Predicting the action alone tells you what a simulated user did. It doesn't tell you why, but that why is useful. A next-action model that says a user would add an item to cart is a data point; a model that also says it did so because the price dropped below a threshold it cares about is something a product team can actually act on. With action prediction alone you just get metrics. Add explanations and you get both metrics and insights.
 
 Adding explanations also turns out to help action prediction itself. [Beyond Believability](https://arxiv.org/abs/2503.20749) trains models to produce a reasoning trace alongside the predicted action, and finds this beats training on the action label alone across every model tested: a 7B model trained with reasoning reaches an outcome F1 of 33.9, against 26.9 for the same model trained on actions only. [Customer-R1](https://arxiv.org/abs/2510.07230) finds the same thing from the other direction: strip the rationale out of its training regime, and accuracy drops no matter which other training choices are held fixed. Asking the model to explain itself doesn't just make the output more useful. It makes the model better at the underlying task too.
 
 ## Closing thoughts
 
-Agentic A/B testing is still a young research direction, and there are several shortcomings in existing works. Some common limitations are: simplified perception and action relative to what users actually see, validation in narrow settings, and agents defaulting towards a narrower, more typical slice of behavior than real users do. 
+Agentic A/B testing is still a young research direction, and there are several shortcomings in existing work. Some common limitations are: simplified perception and action relative to what users actually see, validation in narrow settings, and agents defaulting towards a narrower, more typical slice of behavior than real users do. 
 
 Despite these limitations, early results are promising, at least in predicting the direction of a test. [SimGym](https://arxiv.org/abs/2605.19219) validated its simulated results against 50 completed real-world A/B tests and got the direction of the outcome right about 77% of the time. [AgentA/B](https://arxiv.org/abs/2504.09723) ran a thousand agents through a live Amazon filter-panel test and matched the direction of a parallel human experiment, even though its agents behaved somewhat differently from real users along the way.
 
